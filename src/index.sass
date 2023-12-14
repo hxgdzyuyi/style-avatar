@@ -3,12 +3,28 @@ $variable-prefix: jgui-
 @import "../node_modules/bootstrap/scss/bootstrap-reboot.scss"
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss"
 
-.container
-  @include padding(50px 0)
+.main-container
+  height: 100vh
+  width: 100%
+  display: flex
+  flex-direction: row
+  gap: 20px
+  @include padding(50px)
+
+.panel-section-column
+  flex: 1
+  @include media-breakpoint-up(xl)
+    flex: 0 0 700px
+
+.preview-section-column
+  flex: 1
 
 .panel-section-container
   border: 1px solid #ddd
   border-radius: 8px
+  height: 100%
+  display: flex
+  flex-direction: column
 
   .panel-section-header
     border-bottom: 1px solid #ddd
@@ -48,6 +64,9 @@ $variable-prefix: jgui-
 
   .panel-section-body
     @include padding(0 20px 20px)
+    position: relative
+    height: 100%
+    overflow-y: auto
     .preview-container
       cursor: pointer
       border-radius: 8px
@@ -57,5 +76,113 @@ $variable-prefix: jgui-
       @include padding(4px)
     .preview-image
       max-width: 100%
+      width: 100%
       height: auto
+      aspect-ratio: 1/1
       display: block
+
+.preview-section-container
+  position: relative
+  display: grid
+  grid-template-rows: auto max-content
+  height: 100%
+  .preview-section
+    position: relative
+    height: 100%
+
+.avatar-canvas
+  img
+    position: absolute
+    width: 80%
+    max-width: 400px
+    height: auto
+    aspect-ratio: 1/1
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+.preview-bottom-actions
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  button
+    display: flex
+  .btn-styles,
+  .btn-save
+    min-width: 125px
+    display: block
+    box-sizing: border-box
+    height: 40px
+    line-height: 38px
+    position: relative
+    border: 1px solid transparent
+    cursor: pointer
+    background-color: #ff4500
+    color: #fff
+    border-radius: 100px
+    font-weight: 500
+    @include font-size(16px)
+  .btn-save
+    padding: 0 20px
+    &:hover
+      opacity: 0.8
+  .btn-styles
+    padding: 0 20px 0 4px
+    border: 2px solid #ff4500
+    background-color: #fff
+    color: #ff4500
+    display: flex
+    gap: 25px
+    justify-content: center
+    align-items: center
+    &:hover
+      .styles-count
+        opacity: 0.8
+    .styles-count
+      background: rgba(255,69,0,.4)
+      height: 30px
+      width: 30px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+  .actions-body
+    display: flex
+    gap: 20px
+
+.preview-right-actions
+  position: absolute
+  bottom: 0
+  right: 0
+  display: flex
+  flex-direction: column
+  gap: 20px
+  z-index: 9999
+  .btn
+    cursor: pointer
+    width: 48px
+    height: 48px
+    border-radius: 9999px
+    border: 0
+    &:hover
+      box-shadow: 0 0 5px #aaa
+    svg
+      width: 28px
+      height: 28px
+
+.style-panel-section
+  width: 100%
+
+.style-panel-section-body
+  position: relative
+  height: 100%
+  overflow-y: auto
+  .combile-container
+    display: flex
+  .radio-container
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    .selected
+      border: 1px solid red

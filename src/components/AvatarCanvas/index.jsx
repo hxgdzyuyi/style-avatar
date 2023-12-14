@@ -226,17 +226,12 @@ export default ({ accessoryKeys }) => {
   );
 
   return (
-    <div>
+    <div className="avatar-canvas">
       {avatarAccessories.map((x) => {
         return (
           <img
             style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
               zIndex: x.zIndex,
-              width: 100,
-              height: 100,
             }}
             src={new URL(x.fileKey, import.meta.url)}
             key={x.key}
