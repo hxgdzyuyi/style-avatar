@@ -175,14 +175,68 @@ $variable-prefix: jgui-
   width: 100%
 
 .style-panel-section-body
+  @include padding(0 20px 20px)
   position: relative
   height: 100%
   overflow-y: auto
   .combile-container
     display: flex
+  .combilne-container
+    margin-left: 0
+    margin-right: 0
   .radio-container
     display: flex
-    flex-direction: row
+    flex-direction: column
     flex-wrap: wrap
-    .selected
-      border: 1px solid red
+    margin-bottom: 10px
+    > .row
+      margin-left: 0
+      margin-right: 0
+  .radio-title-badge
+    display: inline-block
+    @include font-size(14px)
+    @include margin(10px 0px)
+    @include padding-left(5px)
+    color: #333
+    background: #d1e7dd
+
+  .preview-container
+    cursor: pointer
+    border-radius: 8px
+    border: 1px solid #ddd
+    &:hover
+      background: #e9ebed
+    @include padding(4px)
+    &.selected
+      box-shadow: 0 0 0 2px #ff4500
+  .preview-image
+    max-width: 100%
+    width: 100%
+    height: auto
+    aspect-ratio: 1/1
+    display: block
+
+.style-panel-section-header
+  display: flex
+  text-align: right
+  justify-content: space-between
+  align-items: center
+  @include margin(10px 20px 10px)
+  .style-actions
+    display: flex
+    gap: 10px
+    flex-direction: row
+    text-align: left
+  .node-label
+    @include font-size(20px)
+  .btn
+    cursor: pointer
+    width: 48px
+    height: 48px
+    border: 0
+    border-radius: 9999px
+    &:hover
+      box-shadow: 0 0 5px #aaa
+    svg
+      width: 28px
+      height: 28px

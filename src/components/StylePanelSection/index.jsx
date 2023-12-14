@@ -33,7 +33,9 @@ import {
 const StylePanelHeader = function () {
   const dispatch = useDispatch();
   const styleFormNode = useSelector((state) => state.panelModel.styleFormNode);
-  const styleFormAccessoriesKeys = useSelector((state) => state.avatarModel.styleFormAccessoriesKeys);
+  const styleFormAccessoriesKeys = useSelector(
+    (state) => state.avatarModel.styleFormAccessoriesKeys,
+  );
 
   if (!styleFormNode) {
     return;
@@ -50,9 +52,40 @@ const StylePanelHeader = function () {
 
   return (
     <div className="style-panel-section-header">
-      <button onClick={handleCloseButtonClicked}>取消</button>
-      <button onClick={handleApplyButtonClicked}>应用</button>
-      {styleFormNode.nodeLabel}
+      <div className="style-actions">
+        <button onClick={handleCloseButtonClicked} className="btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <button onClick={handleApplyButtonClicked} className="btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.5 12.75l6 6 9-13.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <div className="node-label">{styleFormNode.nodeLabel}</div>
     </div>
   );
 };
@@ -82,22 +115,60 @@ const CombineStyleForm = function ({ ctxNode, parentNodeLabels }) {
   const nodes = fetchSortedNodes(ctxNode);
   const currentNodeLabels = [...parentNodeLabels, ctxNode.nodeLabel];
 
-  const renderCombineSection = (node) => (
-    <div key={node.nodeKey}>
-      <div className="title">
-        section: {[...currentNodeLabels, node.nodeLabel].join(">")}
-      </div>
-      <div>
-        <StyleForm ctxNode={node} parentNodeLabels={currentNodeLabels} />
+  const renderCombineSection = (node) => {
+
+    if (node.type == "accessory") {
+      return <CombineAccessoryStyleForm key={node.nodeKey} ctxNode={node} parentNodeLabels={currentNodeLabels} />
+    }
+
+    return <StyleForm key={node.nodeKey} ctxNode={node} parentNodeLabels={currentNodeLabels} />
+  }
+
+  return (
+    <div className="cmobile-container">{nodes.map(renderCombineSection)}</div>
+  );
+};
+
+
+const CombineAccessoryStyleForm = function ({ ctxNode, parentNodeLabels }) {
+  const currentNodeLabels = [...parentNodeLabels, ctxNode.nodeLabel];
+
+  const renderRadio = (node) => (
+    <div
+      key={node.nodeKey}
+      className={classNames({
+        "col-3": true,
+        "col-xl-2": true,
+        "gy-2": true,
+        "gx-2": true,
+      })}
+    >
+      <div
+        className={classNames({
+          "preview-container": true,
+          selected: true,
+        })}
+      >
+        <img
+          className="preview-image"
+          src={new URL("/previews" + node.previewFileKey, import.meta.url)}
+          alt=""
+        />
       </div>
     </div>
   );
 
-  return (
-    <div>
-      <div className="cmobile-container">{nodes.map(renderCombineSection)}</div>
+  return (<div className="radio-container">
+      <div className="radio-title">
+        <div className="radio-title-badge">
+          {[...currentNodeLabels].join("/")}：
+        </div>
+      </div>
+      <div className="row">
+        {[ctxNode].map(renderRadio)}
+      </div>
     </div>
-  );
+ )
 };
 
 const RadioStyleForm = function ({ ctxNode, parentNodeLabels }) {
@@ -116,10 +187,18 @@ const RadioStyleForm = function ({ ctxNode, parentNodeLabels }) {
       key={node.nodeKey}
       onClick={handleRadioClicked(ctxNode, node)}
       className={classNames({
-        selected: node.nodeKey == ctxNode.selectNodeKey,
+        "col-3": true,
+        "col-xl-2": true,
+        "gy-2": true,
+        "gx-2": true,
       })}
     >
-      <div>
+      <div
+        className={classNames({
+          "preview-container": true,
+          selected: node.nodeKey == ctxNode.selectNodeKey,
+        })}
+      >
         <img
           className="preview-image"
           src={new URL("/previews" + node.previewFileKey, import.meta.url)}
@@ -144,7 +223,15 @@ const RadioStyleForm = function ({ ctxNode, parentNodeLabels }) {
 
   return (
     <div className="radio-container">
-      {nodes.map(renderRadio)}
+      <div className="radio-title">
+        <div className="radio-title-badge">
+          {[...currentNodeLabels].join("/")}：
+        </div>
+      </div>
+      <div className="row">
+        {nodes.map(renderRadio)}
+      </div>
+
       {renderSelectedNodeForm()}
     </div>
   );
@@ -228,9 +315,10 @@ function buildAccessoriesKeys(findedStyleNode) {
   }
 
   if (findedStyleNode.selectType === "radio") {
-    const selectedNode = _.find(
-      Object.values(findedStyleNode.nodes), ["nodeKey", findedStyleNode.selectNodeKey],
-    );
+    const selectedNode = _.find(Object.values(findedStyleNode.nodes), [
+      "nodeKey",
+      findedStyleNode.selectNodeKey,
+    ]);
 
     findedKeys = findedKeys.concat(buildAccessoriesKeys(selectedNode));
     return findedKeys;
@@ -247,15 +335,22 @@ export default () => {
   const rootTree = useSelector((state) => state.rootTree);
   const dispatch = useDispatch();
   const styleFormNode = useSelector((state) => state.panelModel.styleFormNode);
-  const styleFormTraitKey = useSelector((state) => state.panelModel.styleFormTraitKey);
+  const styleFormTraitKey = useSelector(
+    (state) => state.panelModel.styleFormTraitKey,
+  );
 
   useLayoutEffect(() => {
-    const [findedStyleNode, findedTraitNode] = findStyleNode(rootTree, openedStylePanelKey);
+    const [findedStyleNode, findedTraitNode] = findStyleNode(
+      rootTree,
+      openedStylePanelKey,
+    );
 
-    dispatch(loadStyleNodeForm({
-      traitNodeKey: findedTraitNode.nodeKey,
-      styleNode: findedStyleNode,
-    }));
+    dispatch(
+      loadStyleNodeForm({
+        traitNodeKey: findedTraitNode.nodeKey,
+        styleNode: findedStyleNode,
+      }),
+    );
 
     return () => {
       dispatch(clearStyleNodeForm());
@@ -263,14 +358,13 @@ export default () => {
     };
   }, [dispatch, rootTree, openedStylePanelKey]);
 
-
   useEffect(() => {
     if (styleFormNode) {
       dispatch(
         applyStyleFormAccessoriesKeys({
-            traitNodeKey: styleFormTraitKey,
-            accessoriesKeys: buildAccessoriesKeys(styleFormNode)
-        })
+          traitNodeKey: styleFormTraitKey,
+          accessoriesKeys: buildAccessoriesKeys(styleFormNode),
+        }),
       );
     }
 
@@ -278,7 +372,7 @@ export default () => {
   }, [dispatch, styleFormNode, styleFormTraitKey]);
 
   if (!styleFormNode) {
-    return null
+    return null;
   }
 
   return (

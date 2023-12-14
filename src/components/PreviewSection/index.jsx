@@ -12,13 +12,17 @@ function PreviewBottomActions() {
           <span className="styles-count">0</span>
           <span>配件</span>
         </button>
-        <button className="btn-save">保存</button>
+        <button className="btn-save">导出</button>
       </div>
     </div>
   );
 }
 
 function PreviewRightActions() {
+  const dispatch = useDispatch();
+  const undoListLength = useSelector((state) => state.avatarModel.undoList.length)
+  const redoListLength = useSelector((state) => state.avatarModel.redoList.length)
+
   return (
     <div className="preview-right-actions">
       <button className="btn" aria-label="分享">
