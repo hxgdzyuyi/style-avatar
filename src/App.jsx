@@ -1,9 +1,19 @@
-import { useState } from 'react'
+import { useState, useLayoutEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { loadRootTree } from './reducers/rootTreeReducer';
+import { loadAllAccessories } from './reducers/allAccessoriesReducer';
+import { accessories as allAccessories, root as rootTree} from "./avatar.json";
 
 function App() {
   const [count, setCount] = useState(0)
+  const dispatch = useDispatch()
+
+  useLayoutEffect(() => {
+    dispatch(loadAllAccessories(allAccessories))
+    dispatch(loadRootTree(rootTree))
+  }, [dispatch])
 
   return (
     <>
