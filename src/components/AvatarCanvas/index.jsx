@@ -235,6 +235,8 @@ export default ({ accessoryKeys }) => {
               top: 0,
               left: 0,
               zIndex: x.zIndex,
+              width: 100,
+              height: 100,
             }}
             src={new URL(x.fileKey, import.meta.url)}
             key={x.key}

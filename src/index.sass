@@ -2,3 +2,60 @@ $variable-prefix: jgui-
 
 @import "../node_modules/bootstrap/scss/bootstrap-reboot.scss"
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss"
+
+.container
+  @include padding(50px 0)
+
+.panel-section-container
+  border: 1px solid #ddd
+  border-radius: 8px
+
+  .panel-section-header
+    border-bottom: 1px solid #ddd
+
+    .nav
+      @include margin(0 10px)
+      @include padding-left(0)
+      display: flex
+      flex-wrap: wrap
+      list-style: none
+      .nav-item
+        @include margin(0 10px)
+        @include font-size(20px)
+        line-height: 3
+        color: #636669
+        display: list-item
+        font-weight: bold
+        cursor: pointer
+      .nav-element
+        position: relative
+      .active
+        color: red
+        background-color: #ff4500
+        background-image: linear-gradient(89.94deg,#ec0623 0%,#ff8717 100%)
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        height: 100%
+        &:before
+          content: ""
+          position: absolute
+          left: 0
+          top: 0
+          bottom: 0
+          border-bottom: 3px solid #ff4500
+          width: 100%
+
+  .panel-section-body
+    @include padding(0 20px 20px)
+    .preview-container
+      cursor: pointer
+      border-radius: 8px
+      border: 1px solid #ddd
+      &:hover
+        background: #e9ebed
+      @include padding(4px)
+    .preview-image
+      max-width: 100%
+      height: auto
+      display: block
