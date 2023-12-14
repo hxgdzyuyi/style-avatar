@@ -50,7 +50,7 @@ trait_key -> style_key -> component_key -> accessory
 3. [x] 定义头像的 trait_name 部分: top, bottom, hats, face, left hand, right hand, full outfit， 符合一定的 z-index
 4. [x] 用 nft 的属性方式生成 accessories.json，文件目录使用 {trait_name}/{accessory_slug}.png 的方式存放
 5. [x] 添加 redux, 载入 rootTree 和 allAccessories
-6. [ ] 添加头像 AvatarCanvas 组件，使用 canvas，头像示意图有默认底图构成，处理 zIndex， 通过 accessoryIds: ["basic_background_001", "basic_body_001"] 生成头像
+6. [x] 添加头像 AvatarCanvas 组件，使用 canvas，头像示意图有默认底图构成，处理 zIndex， 通过 accessoryIds: ["basic_background_001", "basic_body_001"] 生成头像
 7. [ ] 生成左侧 Tab，Tab 内容是 trait_name 的列表，TabContent 是头像示意图
 8. [ ] 生成右侧的可编辑区域
 9. [ ] PC 端右侧底部, 部添加 Wearing 弹框，描述现有配件，可进行联动
