@@ -10,7 +10,7 @@
 
 ## TODO
 
-1. [ ] 添加 sass 脚手架
+1. [x] 添加 sass 脚手架
 2. [ ] 添加 boostrap layout css
 3. [ ] 定义头像的 trait_type 部分: top, bottom, hats, face, left hand, right hand, full outfit， 符合一定的 z-index
 4. [ ] 用 nft 的属性方式生成 accessories.json，文件目录使用 {trait_type}/{accessory_slug}.png 的方式存放
