@@ -21,7 +21,6 @@ const TabItem = function ({ active, currentItem }) {
   );
 };
 
-
 //TODO: <img src={new URL("/previews" + currentItem.previewFileKey, import.meta.url)} alt=""/>
 
 const PanelHeader = function () {
@@ -69,6 +68,19 @@ const PanelBody = function () {
   );
 
   const rootTree = useSelector((state) => state.rootTree);
+  const allAccessories = useSelector((state) => state.allAccessories);
+
+  const currentAccessoriesKeys = useSelector(
+    (state) => state.avatarModel.currentAccessoriesKeys,
+  );
+
+  const currnetStyleKeysDict = _.keyBy(
+    allAccessories.filter((x) =>
+      (currentAccessoriesKeys[currentTraitNodeKey] || []).includes(x.key),
+    ),
+    "styleKey",
+  );
+
   const styleNodes = _.orderBy(
     Object.values((rootTree.nodes[currentTraitNodeKey] || {}).nodes),
     ["listOrder"],
@@ -93,7 +105,12 @@ const PanelBody = function () {
               key={x.nodeKey}
               onClick={handleGridItemClicked(x)}
             >
-              <div className="preview-container">
+              <div
+                className={classNames({
+                  "preview-container": true,
+                  selected: !!currnetStyleKeysDict[x.nodeKey],
+                })}
+              >
                 <img
                   className="preview-image"
                   src={new URL("/previews" + x.previewFileKey, import.meta.url)}
