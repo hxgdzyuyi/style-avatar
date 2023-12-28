@@ -216,7 +216,7 @@ const RadioStyleForm = function ({ ctxNode, parentNodeLabels }) {
     return (
       <StyleForm
         ctxNode={selectedNode}
-        parentNodeLabels={[currentNodeLabels, selectedNode.nodeLabel]}
+        parentNodeLabels={[currentNodeLabels]}
       />
     );
   };
@@ -333,6 +333,16 @@ export default () => {
   );
 
   const rootTree = useSelector((state) => state.rootTree);
+  const allAccessories = useSelector((state) => state.allAccessories);
+
+  const currentTraitNodeKey = useSelector(
+    (state) => state.panelModel.currentTraitNodeKey,
+  );
+  const currentAccessoriesKeys = useSelector(
+    (state) => state.avatarModel.currentAccessoriesKeys,
+  );
+  const defaultAccessoriesKeysDict = _.keyBy(currentAccessoriesKeys[currentTraitNodeKey] || [])
+
   const dispatch = useDispatch();
   const styleFormNode = useSelector((state) => state.panelModel.styleFormNode);
   const styleFormTraitKey = useSelector(
@@ -349,6 +359,7 @@ export default () => {
       loadStyleNodeForm({
         traitNodeKey: findedTraitNode.nodeKey,
         styleNode: findedStyleNode,
+        defaultAccessoriesKeysDict,
       }),
     );
 

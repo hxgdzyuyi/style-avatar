@@ -27,6 +27,14 @@ const currentSlice = createSlice({
       return state
     },
 
+    removeAccessoriesKeysByTraitNodeKey: (state, action) => {
+      const { traitNodeKey } = action.payload
+
+      delete state.currentAccessoriesKeys[traitNodeKey];
+      state.undoList.push(state.currentAccessoriesKeys);
+      return state
+    },
+
     applyAccessoriesKeys: (state, action) => {
       const { payload } = action
       state.currentAccessoriesKeys = {
@@ -43,5 +51,6 @@ export const {
   applyStyleFormAccessoriesKeys,
   clearStyleFormAccessoriesKeys,
   applyAccessoriesKeys,
+  removeAccessoriesKeysByTraitNodeKey,
 } = currentSlice.actions;
 export default currentSlice.reducer;

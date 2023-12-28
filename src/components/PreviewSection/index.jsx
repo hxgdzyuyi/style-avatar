@@ -1,27 +1,50 @@
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useState, useEffect, useLayoutEffect, useMemo } from "react";
+import { createPortal } from "react-dom";
 import { useSelector, useDispatch } from "react-redux";
 import _ from "lodash";
 import classNames from "classnames";
 import AvatarCanvas from "../AvatarCanvas/index.jsx";
+import WearingDialog from "../WearingDialog/index.jsx";
 
 function PreviewBottomActions() {
+  const currentAccessoriesKeys = useSelector(
+    (state) => state.avatarModel.currentAccessoriesKeys,
+  );
+  const currentAccessoriesKeysLength = _.chain(currentAccessoriesKeys)
+    .values()
+    .value().length;
+  const [showModal, setShowModal] = useState(false);
+  const dialogShowAccessoriesKeys = useMemo(
+    () => currentAccessoriesKeys,
+    [showModal],
+  );
+
   return (
     <div className="preview-bottom-actions">
       <div className="actions-body">
-        <button className="btn-styles">
-          <span className="styles-count">0</span>
+        <button className="btn-styles" onClick={() => setShowModal(true)}>
+          <span className="styles-count">{currentAccessoriesKeysLength}</span>
           <span>配件</span>
         </button>
         <button className="btn-save">导出</button>
       </div>
+      <WearingDialog
+        open={showModal}
+        onClose={() => setShowModal(false)}
+        dialogShowAccessoriesKeys={dialogShowAccessoriesKeys}
+      />
     </div>
   );
 }
 
 function PreviewRightActions() {
   const dispatch = useDispatch();
-  const undoListLength = useSelector((state) => state.avatarModel.undoList.length)
-  const redoListLength = useSelector((state) => state.avatarModel.redoList.length)
+  const undoListLength = useSelector(
+    (state) => state.avatarModel.undoList.length,
+  );
+  const redoListLength = useSelector(
+    (state) => state.avatarModel.redoList.length,
+  );
 
   return (
     <div className="preview-right-actions">
@@ -93,13 +116,21 @@ function PreviewRightActions() {
 }
 
 export default () => {
-  const styleFormAccessoriesKeys = useSelector((state) => state.avatarModel.styleFormAccessoriesKeys);
-  const currentAccessoriesKeys = useSelector((state) => state.avatarModel.currentAccessoriesKeys);
+  const styleFormAccessoriesKeys = useSelector(
+    (state) => state.avatarModel.styleFormAccessoriesKeys,
+  );
+  const currentAccessoriesKeys = useSelector(
+    (state) => state.avatarModel.currentAccessoriesKeys,
+  );
 
-  const accessoryKeys = _.uniq(_.flatten(_.values({
-    ...currentAccessoriesKeys,
-    ...styleFormAccessoriesKeys
-  })))
+  const accessoryKeys = _.uniq(
+    _.flatten(
+      _.values({
+        ...currentAccessoriesKeys,
+        ...styleFormAccessoriesKeys,
+      }),
+    ),
+  );
 
   return (
     <div className="preview-section-container">

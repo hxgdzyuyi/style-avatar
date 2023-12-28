@@ -8,7 +8,36 @@ const initialState = {
   styleFormTraitKey: null,
 };
 
-function convertToStyleFormNode({ ctxNode, currentPath, isSelect }) {
+
+function findPathFromAccessory({
+  ctxNode,
+  pathCtx,
+  currentPath,
+}, accessoryKey) {
+  if (ctxNode.type === "accessory") {
+    if (ctxNode.key === accessoryKey) {
+      pathCtx.path = currentPath
+    }
+    return;
+  }
+
+  if (ctxNode.selectType === "combine" || ctxNode.selectType === "radio") {
+    _.each(Object.entries(ctxNode.nodes), ([key, node]) => {
+      findPathFromAccessory({
+        ctxNode: node,
+        currentPath: [...currentPath, key],
+        pathCtx,
+      }, accessoryKey);
+    });
+  }
+}
+
+function convertToStyleFormNode({
+  ctxNode,
+  currentPath,
+  canSelect,
+  selectNodeKey,
+}) {
   if (ctxNode.type === "accessory") {
     return;
   }
@@ -19,7 +48,8 @@ function convertToStyleFormNode({ ctxNode, currentPath, isSelect }) {
       convertToStyleFormNode({
         ctxNode: node,
         currentPath: [...currentPath, key],
-        isSelect,
+        canSelect,
+        selectNodeKey: null,
       });
     });
   }
@@ -32,15 +62,64 @@ function convertToStyleFormNode({ ctxNode, currentPath, isSelect }) {
     );
 
     ctxNode.defaultSelectNodeKey = defaultKeyNode.nodeKey;
-    if (! ctxNode.selectNodeKey) {
-      ctxNode.selectNodeKey = isSelect ? ctxNode.defaultSelectNodeKey : "";
+
+    if (canSelect) {
+      if (selectNodeKey) {
+        ctxNode.selectNodeKey = selectNodeKey
+      } else {
+        ctxNode.selectNodeKey = ctxNode.defaultSelectNodeKey
+      }
+    } else {
+      ctxNode.selectNodeKey = ""
     }
 
     _.each(Object.entries(ctxNode.nodes), ([key, node]) => {
       convertToStyleFormNode({
         ctxNode: node,
         currentPath: [...currentPath, key],
-        isSelect: isSelect && key === ctxNode.selectNodeKey,
+        canSelect: canSelect && key === ctxNode.selectNodeKey,
+        selectNodeKey: null,
+      });
+    });
+  }
+}
+
+
+function applyAccessoryKeyTree({
+  ctxNode,
+  accessoryKeyTree,
+  canSelect,
+}) {
+  if (ctxNode.type === "accessory") {
+    return;
+  }
+
+  if (ctxNode.selectType === "combine") {
+    _.each(Object.entries(ctxNode.nodes), ([nodeKey, node]) => {
+      applyAccessoryKeyTree({
+        ctxNode: node,
+        canSelect,
+        accessoryKeyTree: accessoryKeyTree[nodeKey] || {},
+      });
+    });
+  }
+
+  if (ctxNode.selectType === "radio") {
+    if (canSelect) {
+      if (!_.isEmpty(accessoryKeyTree)) {
+        ctxNode.selectNodeKey = _.first(Object.keys(accessoryKeyTree))
+      } else {
+        ctxNode.selectNodeKey = ctxNode.defaultSelectNodeKey
+      }
+    } else {
+      ctxNode.selectNodeKey = ""
+    }
+
+    _.each(Object.entries(ctxNode.nodes), ([nodeKey, node]) => {
+      applyAccessoryKeyTree({
+        ctxNode: node,
+        accessoryKeyTree: accessoryKeyTree[nodeKey] || {},
+        canSelect: canSelect && nodeKey === ctxNode.selectNodeKey,
       });
     });
   }
@@ -51,10 +130,47 @@ const currentSlice = createSlice({
   initialState,
   reducers: {
     loadStyleNodeForm(state, action) {
-      let {styleNode, traitNodeKey} = action.payload
+      let { styleNode, traitNodeKey, defaultAccessoriesKeysDict } =
+        action.payload;
 
       let ctxNode = _.cloneDeep(styleNode);
-      convertToStyleFormNode({ ctxNode, currentPath: [], isSelect: true });
+      convertToStyleFormNode({
+        ctxNode,
+        currentPath: [],
+        canSelect: true,
+        selectNodeKey: null,
+      });
+
+      let accessoryKeyTree = _.chain(defaultAccessoriesKeysDict)
+        .keys()
+        .map((accessoryKey) => {
+          let pathCtx = { path: [] };
+          findPathFromAccessory({
+            ctxNode,
+            currentPath: [],
+            pathCtx,
+          }, accessoryKey)
+
+          return pathCtx.path
+        })
+        .reduce((treeCtx, path) => {
+          path.reduce((acc, pathKey) => {
+            if (!acc[pathKey]) {
+              acc[pathKey] = {}
+            }
+            return acc[pathKey]
+          }, treeCtx)
+
+          return treeCtx
+        }, {})
+        .value()
+
+      applyAccessoryKeyTree({
+        ctxNode,
+        accessoryKeyTree,
+        canSelect: true,
+      })
+
       state.styleFormNode = ctxNode;
       state.styleFormTraitKey = traitNodeKey;
 
@@ -62,17 +178,18 @@ const currentSlice = createSlice({
     },
 
     applyRadioChange(state, action) {
-      const { path, nodeKey } = action.payload
+      const { path, nodeKey } = action.payload;
 
-      const findedNode = path.length ? _.get(state.styleFormNode, path.map(x => `nodes.${x}`).join('.')) : state.styleFormNode
-
-      findedNode.selectNodeKey = nodeKey
+      const findedNode = path.length
+        ? _.get(state.styleFormNode, path.map((x) => `nodes.${x}`).join("."))
+        : state.styleFormNode;
 
       convertToStyleFormNode({
         ctxNode: findedNode,
         currentPath: path,
-        isSelect: true
-      })
+        canSelect: true,
+        selectNodeKey: nodeKey,
+      });
 
       return state;
     },
