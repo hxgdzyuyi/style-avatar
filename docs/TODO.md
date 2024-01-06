@@ -53,9 +53,9 @@ trait_key -> style_key -> component_key -> accessory
 6. [x] 添加头像 AvatarCanvas 组件，使用 canvas，头像示意图有默认底图构成，处理 zIndex， 通过 accessoryIds: ["basic_background_001", "basic_body_001"] 生成头像
 7. [x] 生成左侧 Tab，Tab 内容是 trait_name 的列表，TabContent 是头像示意图
 8. [x] 生成右侧的可编辑区域的 HTML/CSS 结构
-9. [ ] PC 端右侧底部, 部添加 Wearing 弹框，描述现有配件，可进行联动
-10. [ ] PC 端右侧底部, 添加 Download 按钮，通过 toDataURL 生成图片
-11. [ ] PC 端右侧右列, 添加 Download Icon ，通过 toDataURL 生成图片
+9. [x] PC 端右侧底部, 部添加 Wearing 弹框，描述现有配件，可进行联动
+10. [x] PC 端右侧底部, 添加 Download 按钮，通过 toDataURL 生成图片
+11. [x] PC 端右侧右列, 添加 Download Icon ，通过 toDataURL 生成图片
 12. [ ] PC 端右侧右列, 添加 Redo, Undo 逻辑
 13. [ ] PC 端右侧右列, 添加 Random 按钮, Random 可 Undo
 14. [ ] 处理特殊独占组件的显示规则

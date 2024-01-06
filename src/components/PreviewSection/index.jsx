@@ -3,8 +3,78 @@ import { createPortal } from "react-dom";
 import { useSelector, useDispatch } from "react-redux";
 import _ from "lodash";
 import classNames from "classnames";
-import AvatarCanvas from "../AvatarCanvas/index.jsx";
+import AvatarCanvas, { useAvatarAccessories } from "../AvatarCanvas/index.jsx";
 import WearingDialog from "../WearingDialog/index.jsx";
+
+function getCurrentDate() {
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  const hours = String(date.getHours()).padStart(2, "0");
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+  const period = hours >= 12 ? "PM" : "AM";
+
+  const formattedDate = `${year}_${month}_${day}_${hours}_${minutes}_${period}`;
+  return formattedDate;
+}
+
+async function exportAvatarToJPEG(avatarAccessories) {
+  var canvas = document.createElement("canvas");
+  canvas.width = 200;
+  canvas.height = 200;
+
+  var context = canvas.getContext("2d");
+  context.fillStyle = "white";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+
+  const loaders = _.chain(avatarAccessories)
+    .orderBy("zIndex", "asc")
+    .map((x) => {
+      return new Promise((resolve, reject) => {
+        const image = new Image();
+
+        image.src = new URL(x.fileKey, import.meta.url);
+
+        image.onload = () => {
+          resolve(image);
+        };
+
+        image.onerror = (err) => {
+          reject(err);
+        };
+      });
+    })
+    .value();
+
+  const images = await Promise.all(loaders);
+
+  for (let image of images) {
+    context.drawImage(image, 0, 0, canvas.width, canvas.height);
+  }
+
+  var dataURL = canvas.toDataURL("image/jpeg");
+
+  var link = document.createElement("a");
+  link.href = dataURL;
+  link.download = `avatar_${getCurrentDate()}.jpg`;
+
+  link.click();
+}
+
+function ExportAvatarButton() {
+  const accessoryKeys = useAccessoryKeys();
+  const avatarAccessories = useAvatarAccessories(accessoryKeys);
+
+  return (
+    <button
+      className="btn-save"
+      onClick={async () => exportAvatarToJPEG(avatarAccessories)}
+    >
+      导出
+    </button>
+  );
+}
 
 function PreviewBottomActions() {
   const currentAccessoriesKeys = useSelector(
@@ -26,7 +96,7 @@ function PreviewBottomActions() {
           <span className="styles-count">{currentAccessoriesKeysLength}</span>
           <span>配件</span>
         </button>
-        <button className="btn-save">导出</button>
+        <ExportAvatarButton />
       </div>
       <WearingDialog
         open={showModal}
@@ -115,7 +185,7 @@ function PreviewRightActions() {
   );
 }
 
-export default () => {
+function useAccessoryKeys() {
   const styleFormAccessoriesKeys = useSelector(
     (state) => state.avatarModel.styleFormAccessoriesKeys,
   );
@@ -123,7 +193,7 @@ export default () => {
     (state) => state.avatarModel.currentAccessoriesKeys,
   );
 
-  const accessoryKeys = _.uniq(
+  return _.uniq(
     _.flatten(
       _.values({
         ...currentAccessoriesKeys,
@@ -131,6 +201,10 @@ export default () => {
       }),
     ),
   );
+}
+
+export default () => {
+  const accessoryKeys = useAccessoryKeys();
 
   return (
     <div className="preview-section-container">

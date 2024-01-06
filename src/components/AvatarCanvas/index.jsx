@@ -192,7 +192,7 @@ const defaultAccessoryKeys = [
   "head_head8_part1_white",
 ];
 
-export default ({ accessoryKeys }) => {
+function useAvatarAccessories(accessoryKeys) {
   const rootTree = useSelector((state) => state.rootTree);
   const allAccessories = useSelector((state) => state.allAccessories);
   const filterAccessories = (accessories, keys) =>
@@ -219,11 +219,17 @@ export default ({ accessoryKeys }) => {
     avatarAccessorieKeysRef: avatarAccessorieKeys,
   });
 
-  const avatarAccessories = _.orderBy(
+  return _.orderBy(
     avatarAccessorieKeys.map((x) => allAccessoriesDict[x]),
     ["zIndex"],
     ["asc"],
   );
+}
+
+export { useAvatarAccessories };
+
+export default ({ accessoryKeys }) => {
+  const avatarAccessories = useAvatarAccessories(accessoryKeys);
 
   return (
     <div className="avatar-canvas">
