@@ -37,13 +37,30 @@ const currentSlice = createSlice({
 
     applyAccessoriesKeys: (state, action) => {
       const { payload } = action
+      state.redoList = []
+      state.undoList.push(state.currentAccessoriesKeys);
       state.currentAccessoriesKeys = {
         ...state.currentAccessoriesKeys,
         ...payload,
       };
-      state.undoList.push(state.currentAccessoriesKeys);
       return state
-    }
+    },
+
+    undoApplyAccessoriesKeys: (state, action) => {
+      if (state.undoList.length) {
+        state.redoList.push(state.currentAccessoriesKeys);
+        state.currentAccessoriesKeys = state.undoList.pop()
+      }
+      return state
+    },
+
+    redoApplyAccessoriesKeys: (state, action) => {
+      if (state.redoList.length) {
+        state.undoList.push(state.currentAccessoriesKeys);
+        state.currentAccessoriesKeys = state.redoList.pop()
+      }
+      return state
+    },
   },
 });
 
@@ -52,5 +69,7 @@ export const {
   clearStyleFormAccessoriesKeys,
   applyAccessoriesKeys,
   removeAccessoriesKeysByTraitNodeKey,
+  undoApplyAccessoriesKeys,
+  redoApplyAccessoriesKeys,
 } = currentSlice.actions;
 export default currentSlice.reducer;

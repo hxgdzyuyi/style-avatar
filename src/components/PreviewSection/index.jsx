@@ -5,6 +5,10 @@ import _ from "lodash";
 import classNames from "classnames";
 import AvatarCanvas, { useAvatarAccessories } from "../AvatarCanvas/index.jsx";
 import WearingDialog from "../WearingDialog/index.jsx";
+import {
+  undoApplyAccessoriesKeys,
+  redoApplyAccessoriesKeys,
+} from "../../reducers/avatarModelReducer";
 
 function getCurrentDate() {
   const date = new Date();
@@ -134,7 +138,11 @@ function PreviewRightActions() {
         </svg>
       </button>
 
-      <button className="btn" aria-label="Redo">
+      <button
+        className={classNames({ btn: true, "btn-disabled": !redoListLength })}
+        onClick={() => dispatch(redoApplyAccessoriesKeys())}
+        aria-label="Redo"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -150,7 +158,11 @@ function PreviewRightActions() {
         </svg>
       </button>
 
-      <button className="btn" aria-label="Undo">
+      <button
+        className={classNames({ btn: true, "btn-disabled": !undoListLength })}
+        onClick={() => dispatch(undoApplyAccessoriesKeys())}
+        aria-label="Undo"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
