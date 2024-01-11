@@ -3,7 +3,10 @@ import React from "react";
 import clsx from "classnames";
 import AvatarCanvas from "../AvatarCanvas/index.jsx";
 import { useSelector, useDispatch } from "react-redux";
-import { applyAccessoriesKeys, removeAccessoriesKeysByTraitNodeKey } from "../../reducers/avatarModelReducer";
+import {
+  applyAccessoriesKeys,
+  removeAccessoriesKeysByTraitNodeKey,
+} from "../../reducers/avatarModelReducer";
 
 const styles = {
   wrapper: {
@@ -32,9 +35,11 @@ const WearingDialogContent = (props) => {
   const dispatch = useDispatch();
   const handleItemClicked = (traitNodeKey, accessoriesKeys, selected) => () => {
     if (selected) {
-      dispatch(removeAccessoriesKeysByTraitNodeKey({
-        traitNodeKey
-      }))
+      dispatch(
+        removeAccessoriesKeysByTraitNodeKey({
+          traitNodeKey,
+        }),
+      );
     } else {
       dispatch(
         applyAccessoriesKeys({
@@ -68,6 +73,7 @@ const WearingDialogContent = (props) => {
                     onClick={handleItemClicked(key, accessoryKeys, selected)}
                     className={clsx({
                       "col-4": true,
+                      "gy-2": true,
                       selected: selected,
                     })}
                   >

@@ -8,6 +8,7 @@ import WearingDialog from "../WearingDialog/index.jsx";
 import {
   undoApplyAccessoriesKeys,
   redoApplyAccessoriesKeys,
+  setAccessoriesKeys,
 } from "../../reducers/avatarModelReducer";
 
 function getCurrentDate() {
@@ -120,6 +121,31 @@ function PreviewRightActions() {
     (state) => state.avatarModel.redoList.length,
   );
 
+  const allAccessories = useSelector((state) => state.allAccessories);
+  const allAccessoriesByTraitKey = useMemo(
+    () => _.groupBy(allAccessories, "traitKey"),
+    [allAccessories],
+  );
+
+  const handleRandomClicked = () => {
+    const allTraitKeys = Object.keys(allAccessoriesByTraitKey);
+    const sampleTraitKeys = _.sampleSize(
+      allTraitKeys,
+      _.random(Math.floor(allTraitKeys.length / 2), allTraitKeys.length),
+    );
+
+    const accessoryKeys = _.reduce(
+      sampleTraitKeys,
+      (acc, traitKey) => {
+        acc[traitKey] = _.sample(allAccessoriesByTraitKey[traitKey]).key;
+        return acc;
+      },
+      {},
+    );
+
+    dispatch(setAccessoriesKeys(accessoryKeys));
+  };
+
   return (
     <div className="preview-right-actions">
       <button className="btn" aria-label="分享">
@@ -178,7 +204,11 @@ function PreviewRightActions() {
         </svg>
       </button>
 
-      <button className="btn" aria-label="随机">
+      <button
+        className="btn"
+        onClick={() => handleRandomClicked()}
+        aria-label="Random"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -223,8 +253,8 @@ export default () => {
       <div className="preview-section">
         <AvatarCanvas accessoryKeys={accessoryKeys} />
       </div>
-      <PreviewRightActions />
       <PreviewBottomActions />
+      <PreviewRightActions />
     </div>
   );
 };
