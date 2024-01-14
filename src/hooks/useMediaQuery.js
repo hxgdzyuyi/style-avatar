@@ -1,7 +1,7 @@
 // Copy from https://github.com/uidotdev/usehooks/blob/main/index.js
-//
+import React from "react";
 
-export function useMediaQuery(query) {
+export default function useMediaQuery(query) {
   const subscribe = React.useCallback(
     (callback) => {
       const matchMedia = window.matchMedia(query);

@@ -8,6 +8,8 @@ import { accessories as allAccessories, root as rootTree } from "./avatar.json";
 import AvatarCanvas from "./components/AvatarCanvas";
 import PanelSection from "./components/PanelSection";
 import PreviewSection from "./components/PreviewSection";
+import useMediaQuery from "./hooks/useMediaQuery";
+import classNames from "classnames";
 
 function App() {
   const dispatch = useDispatch();
@@ -19,18 +21,50 @@ function App() {
     //TODO: dispatch(openStylePanel("clothing8"));
   }, [dispatch]);
 
+  const isPortaitPhone = useMediaQuery("(max-width: 575.98px)");
+
   if (!currentRootTree) {
     return null;
   }
 
+  const PanelSectionColumn = () => (
+    <div className="panel-section-column">
+      <PanelSection />
+    </div>
+  );
+  const PreviewSectionColumn = () => (
+    <div className="preview-section-column">
+      <PreviewSection />
+    </div>
+  );
+
+  const PortraitPhoneLayout = () => {
+    return (
+      <>
+        <PreviewSectionColumn />
+        <PanelSectionColumn />
+      </>
+    );
+  };
+
+  const NormalLayout = () => {
+    return (
+      <>
+        <PanelSectionColumn />
+        <PreviewSectionColumn />
+      </>
+    );
+  };
+
   return (
-    <div className="main-container">
-      <div className="panel-section-column">
-        <PanelSection />
-      </div>
-      <div className="preview-section-column">
-        <PreviewSection />
-      </div>
+    <div
+      className={classNames({
+        "main-container": true,
+        "portait-phone-layout": isPortaitPhone,
+        "normal-layout": !isPortaitPhone,
+      })}
+    >
+      {isPortaitPhone ? <PortraitPhoneLayout /> : <NormalLayout />}
     </div>
   );
 }

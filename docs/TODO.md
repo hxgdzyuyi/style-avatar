@@ -58,7 +58,9 @@ trait_key -> style_key -> component_key -> accessory
 11. [x] PC 端右侧右列, 添加 Download Icon ，通过 toDataURL 生成图片
 12. [x] PC 端右侧右列, 添加 Redo, Undo 逻辑
 13. [x] PC 端右侧右列, 添加 Random 按钮, Random 可 Undo
-14. [ ] 适配 Moble 端
-15. [ ] 完成部署脚本
-16. [ ] 修复预览图片的问题
-17. [ ] 调整导出图片大小
+14. [ ] Mobile 适配，Preview面板适配
+15. [ ] Mobile 适配，Panel 头部导航适配
+16. [ ] Undo/Redo 和选择器以及配件 Dialog 的冲突
+17. [ ] 完成部署脚本
+18. [ ] 修复预览图片的问题
+19. [ ] 调整导出图片大小

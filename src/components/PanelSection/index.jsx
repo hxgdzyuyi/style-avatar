@@ -101,7 +101,7 @@ const PanelBody = function () {
         {styleNodes.map((x) => {
           return (
             <div
-              className="col-6 col-xl-3 gy-4"
+              className="panel-item col-3 gy-2 col-sm-6 gy-sm-3 col-md-4 gy-md-4 col-xl-3 gy-xl-4"
               key={x.nodeKey}
               onClick={handleGridItemClicked(x)}
             >
