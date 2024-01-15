@@ -6,6 +6,7 @@ const initialState = {
   openedStylePanelKey: "",
   styleFormNode: null,
   styleFormTraitKey: null,
+  panelHeaderScrollX: null,
 };
 
 
@@ -214,6 +215,11 @@ const currentSlice = createSlice({
       state.currentTraitNodeKey = action.payload;
       return state;
     },
+
+    setPanelHeaderScrollX(state, action) {
+      state.panelHeaderScrollX = action.payload;
+      return state;
+    }
   },
 });
 
@@ -224,5 +230,6 @@ export const {
   loadStyleNodeForm,
   clearStyleNodeForm,
   applyRadioChange,
+  setPanelHeaderScrollX,
 } = currentSlice.actions;
 export default currentSlice.reducer;

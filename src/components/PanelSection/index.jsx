@@ -1,12 +1,14 @@
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import _ from "lodash";
 import classNames from "classnames";
 import {
   switchTraitNodeKey,
+  setPanelHeaderScrollX,
   openStylePanel,
 } from "../../reducers/panelModelReducer";
 import StylePanelSection from "../StylePanelSection";
+import useScroll from "../../hooks/useScroll";
 
 const TabItem = function ({ active, currentItem }) {
   return (
@@ -24,13 +26,27 @@ const TabItem = function ({ active, currentItem }) {
 //TODO: <img src={new URL("/previews" + currentItem.previewFileKey, import.meta.url)} alt=""/>
 
 const PanelHeader = function () {
+  const dispatch = useDispatch();
+  const scrollRef = useRef(null);
+  const [{ x, _y }, scrollTo] = useScroll(scrollRef);
+  const panelHeaderScrollX = useSelector(state => state.panelModel.panelHeaderScrollX);
+
+  useEffect(() => {
+    if (panelHeaderScrollX) {
+      scrollTo(panelHeaderScrollX, 0)
+    }
+  }, [scrollTo])
+
+  useEffect(() => {
+    dispatch(setPanelHeaderScrollX(x))
+  }, [x])
+
   const rootTree = useSelector((state) => state.rootTree);
   const traitNodes = _.orderBy(
     Object.values(rootTree.nodes),
     ["listOrder"],
     ["asc"],
   );
-  const dispatch = useDispatch();
 
   const currentTraitNodeKey = useSelector(
     (state) => state.panelModel.currentTraitNodeKey,
@@ -43,7 +59,7 @@ const PanelHeader = function () {
     };
 
   return (
-    <div className="panel-section-header">
+    <div className="panel-section-header" ref={scrollRef}>
       <ul className="nav">
         {traitNodes.map((x) => (
           <li
