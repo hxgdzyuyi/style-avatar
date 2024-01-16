@@ -129,6 +129,10 @@ function PreviewRightActions() {
     (state) => state.avatarModel.redoList.length,
   );
 
+  const styleFormTraitKey = useSelector(
+    (state) => state.panelModel.styleFormTraitKey,
+  );
+
   const allAccessories = useSelector((state) => state.allAccessories);
   const allAccessoriesByTraitKey = useMemo(
     () => _.groupBy(allAccessories, "traitKey"),
@@ -157,8 +161,13 @@ function PreviewRightActions() {
   return (
     <div className="preview-right-actions">
       <button
-        className={classNames({ btn: true, "btn-disabled": !redoListLength })}
-        onClick={() => dispatch(redoApplyAccessoriesKeys())}
+        className={classNames({ btn: true, "btn-disabled": !redoListLength || styleFormTraitKey })}
+        onClick={() => {
+          if (!redoListLength || styleFormTraitKey) {
+            return
+          }
+          dispatch(redoApplyAccessoriesKeys())
+        }}
         aria-label="Redo"
       >
         <svg
@@ -177,8 +186,13 @@ function PreviewRightActions() {
       </button>
 
       <button
-        className={classNames({ btn: true, "btn-disabled": !undoListLength })}
-        onClick={() => dispatch(undoApplyAccessoriesKeys())}
+        className={classNames({ btn: true, "btn-disabled": !undoListLength || styleFormTraitKey })}
+        onClick={() => {
+          if (!undoListLength || styleFormTraitKey) {
+            return
+          }
+          dispatch(undoApplyAccessoriesKeys())
+        }}
         aria-label="Undo"
       >
         <svg
