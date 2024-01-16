@@ -94,10 +94,18 @@ function PreviewBottomActions() {
     [showModal],
   );
 
+  const handleWearingClicked = () => {
+    if (!currentAccessoriesKeysLength) {
+      return;
+    }
+
+    setShowModal(true);
+  }
+
   return (
     <div className="preview-bottom-actions">
       <div className="actions-body">
-        <button className="btn-styles" onClick={() => setShowModal(true)}>
+        <button className="btn-styles" onClick={handleWearingClicked}>
           <span className="styles-count">{currentAccessoriesKeysLength}</span>
           <span>配件</span>
         </button>
