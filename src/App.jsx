@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import reactLogo from "./assets/react.svg";
 import { loadRootTree } from "./reducers/rootTreeReducer";
@@ -22,6 +22,16 @@ function App() {
   }, [dispatch]);
 
   const isPortaitPhone = useMediaQuery("(max-width: 575.98px)");
+
+  useEffect(() => {
+    if (isPortaitPhone) {
+      document.body.classList.add('is-portait-phone');
+    }
+
+    return () => {
+      document.body.classList.remove('is-portait-phone');
+    }
+  }, [isPortaitPhone])
 
   if (!currentRootTree) {
     return null;
