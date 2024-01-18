@@ -11,6 +11,9 @@ dependencies:
   bootstrap:
     specifier: ^5.3.2
     version: registry.npmmirror.com/bootstrap@5.3.2(@popperjs/core@2.11.8)
+  bootstrap-icons:
+    specifier: ^1.11.3
+    version: registry.npmmirror.com/bootstrap-icons@1.11.3
   classnames:
     specifier: ^2.3.2
     version: registry.npmmirror.com/classnames@2.3.2
@@ -986,6 +989,12 @@ packages:
     name: binary-extensions
     version: 2.2.0
     engines: {node: '>=8'}
+
+  registry.npmmirror.com/bootstrap-icons@1.11.3:
+    resolution: {integrity: sha512-+3lpHrCw/it2/7lBL15VR0HEumaBss0+f/Lb6ZvHISn1mlK83jjFpooTLsMWbIjJMDjDjOExMsTxnXSIT4k4ww==, tarball: https://registry.npmmirror.com/bootstrap-icons/-/bootstrap-icons-1.11.3.tgz}
+    name: bootstrap-icons
+    version: 1.11.3
+    dev: false
 
   registry.npmmirror.com/bootstrap@5.3.2(@popperjs/core@2.11.8):
     resolution: {integrity: sha512-D32nmNWiQHo94BKHLmOrdjlL05q1c8oxbtBphQFb9Z5to6eGRDCm0QgeaZ4zFBHzfg2++rqa2JkqCcxDy0sH0g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/bootstrap/-/bootstrap-5.3.2.tgz}
