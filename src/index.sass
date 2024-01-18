@@ -2,6 +2,7 @@ $variable-prefix: jgui-
 
 @import "../node_modules/bootstrap/scss/bootstrap-reboot.scss"
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss"
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
 
 body.is-portait-phone
   height: 100vh
@@ -197,6 +198,7 @@ body.is-portait-phone
   gap: 20px
   z-index: 999
   .btn
+    font-size: 24px
     cursor: pointer
     width: 48px
     height: 48px
@@ -271,6 +273,7 @@ body.is-portait-phone
   .node-label
     @include font-size(20px)
   .btn
+    font-size: 28px
     cursor: pointer
     width: 48px
     height: 48px
@@ -278,9 +281,6 @@ body.is-portait-phone
     border-radius: 9999px
     &:hover
       box-shadow: 0 0 5px #aaa
-    svg
-      width: 28px
-      height: 28px
 
 .wearing-dialog
   .dialog-header

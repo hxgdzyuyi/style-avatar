@@ -170,19 +170,7 @@ function PreviewRightActions() {
         }}
         aria-label="Redo"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.3}
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15 15l6-6m0 0l-6-6m6 6H9a6 6 0 000 12h3"
-          />
-        </svg>
+        <i class="bi bi-arrow-clockwise"></i>
       </button>
 
       <button
@@ -195,19 +183,7 @@ function PreviewRightActions() {
         }}
         aria-label="Undo"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.3}
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
-          />
-        </svg>
+        <i class="bi bi-arrow-counterclockwise"></i>
       </button>
 
       <button
@@ -215,19 +191,7 @@ function PreviewRightActions() {
         onClick={() => handleRandomClicked()}
         aria-label="Random"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.3}
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-          />
-        </svg>
+        <i class="bi bi-lightning"></i>
       </button>
     </div>
   );

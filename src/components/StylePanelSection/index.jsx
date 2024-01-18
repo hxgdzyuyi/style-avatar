@@ -54,35 +54,11 @@ const StylePanelHeader = function () {
     <div className="style-panel-section-header">
       <div className="style-actions">
         <button onClick={handleCloseButtonClicked} className="btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+          <i class="bi bi-x"></i>
         </button>
 
         <button onClick={handleApplyButtonClicked} className="btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4.5 12.75l6 6 9-13.5"
-            />
-          </svg>
+          <i class="bi bi-check2"></i>
         </button>
       </div>
       <div className="node-label">{styleFormNode.nodeLabel}</div>
