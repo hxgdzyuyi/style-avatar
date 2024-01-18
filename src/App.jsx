@@ -1,6 +1,5 @@
 import { useState, useLayoutEffect, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import reactLogo from "./assets/react.svg";
 import { loadRootTree } from "./reducers/rootTreeReducer";
 import { openStylePanel } from "./reducers/panelModelReducer";
 import { loadAllAccessories } from "./reducers/allAccessoriesReducer";
