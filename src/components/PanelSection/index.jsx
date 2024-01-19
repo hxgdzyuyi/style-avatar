@@ -23,8 +23,6 @@ const TabItem = function ({ active, currentItem }) {
   );
 };
 
-//TODO: <img src={new URL("/previews" + currentItem.previewFileKey, import.meta.url)} alt=""/>
-
 const PanelHeader = function () {
   const dispatch = useDispatch();
   const scrollRef = useRef(null);

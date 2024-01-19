@@ -15,21 +15,6 @@ import {
   applyAccessoriesKeys,
 } from "../../reducers/avatarModelReducer";
 
-//const TabItem = function ({ active, currentItem }) {
-//return (
-//<div
-//className={classNames({
-//active: active,
-//"nav-element": true,
-//})}
-//>
-//{currentItem.nodeLabel}
-//</div>
-//);
-//};
-
-//TODO: <img src={new URL("/previews" + currentItem.previewFileKey, import.meta.url)} alt=""/>
-
 const StylePanelHeader = function () {
   const dispatch = useDispatch();
   const styleFormNode = useSelector((state) => state.panelModel.styleFormNode);
@@ -54,7 +39,7 @@ const StylePanelHeader = function () {
     <div className="style-panel-section-header">
       <div className="style-actions">
         <button onClick={handleCloseButtonClicked} className="btn">
-          <i className="bi bi-x"></i>
+          <i className="bi bi-arrow-left"></i>
         </button>
 
         <button onClick={handleApplyButtonClicked} className="btn">
