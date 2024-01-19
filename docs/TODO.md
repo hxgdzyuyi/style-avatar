@@ -60,7 +60,8 @@ trait_key -> style_key -> component_key -> accessory
 13. [x] PC 端右侧右列, 添加 Random 按钮, Random 可 Undo
 14. [x] Mobile 适配，Preview 面板适配
 15. [x] Mobile 适配，Panel 头部导航适配
-16. [ ] Undo/Redo 和选择器以及配件 Dialog 的冲突
-17. [ ] 完成部署脚本
-18. [ ] 修复预览图片的问题
-19. [ ] 调整导出图片大小
+16. [x] Undo/Redo 和选择器以及配件 Dialog 的冲突
+17. [x] 完成部署脚本
+18. [ ] 连续提交相同样式，会触发 undoList 添加两次同样元素
+19. [ ] 修复预览图片的问题
+20. [ ] 调整导出图片大小
