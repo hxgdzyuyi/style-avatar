@@ -101,7 +101,7 @@ export default React.forwardRef(function WearingDialog(props, ref) {
               aria-label="关闭"
               onClick={onClose}
             >
-              <i class="bi bi-x-lg"></i>
+              <i className="bi bi-x-lg"></i>
             </button>
           )}
           <WearingDialogContent {...props} />

@@ -170,7 +170,7 @@ function PreviewRightActions() {
         }}
         aria-label="Redo"
       >
-        <i class="bi bi-arrow-clockwise"></i>
+        <i className="bi bi-arrow-clockwise"></i>
       </button>
 
       <button
@@ -183,7 +183,7 @@ function PreviewRightActions() {
         }}
         aria-label="Undo"
       >
-        <i class="bi bi-arrow-counterclockwise"></i>
+        <i className="bi bi-arrow-counterclockwise"></i>
       </button>
 
       <button
@@ -191,7 +191,7 @@ function PreviewRightActions() {
         onClick={() => handleRandomClicked()}
         aria-label="Random"
       >
-        <i class="bi bi-lightning"></i>
+        <i className="bi bi-lightning"></i>
       </button>
     </div>
   );

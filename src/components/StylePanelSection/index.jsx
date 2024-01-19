@@ -54,11 +54,11 @@ const StylePanelHeader = function () {
     <div className="style-panel-section-header">
       <div className="style-actions">
         <button onClick={handleCloseButtonClicked} className="btn">
-          <i class="bi bi-x"></i>
+          <i className="bi bi-x"></i>
         </button>
 
         <button onClick={handleApplyButtonClicked} className="btn">
-          <i class="bi bi-check2"></i>
+          <i className="bi bi-check2"></i>
         </button>
       </div>
       <div className="node-label">{styleFormNode.nodeLabel}</div>
