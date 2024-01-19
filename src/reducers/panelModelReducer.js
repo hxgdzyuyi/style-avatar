@@ -4,6 +4,7 @@ import _ from "lodash";
 const initialState = {
   currentTraitNodeKey: "background",
   openedStylePanelKey: "",
+  openedStylePanelCanCancelStyle: false,
   styleFormNode: null,
   styleFormTraitKey: null,
   panelHeaderScrollX: null,
@@ -202,12 +203,15 @@ const currentSlice = createSlice({
     },
 
     openStylePanel(state, action) {
-      state.openedStylePanelKey = action.payload;
+      const payload = action.payload;
+      state.openedStylePanelKey = payload.openedStylePanelKey;
+      state.openedStylePanelCanCancelStyle = payload.openedStylePanelCanCancelStyle;
       return state;
     },
 
     closeStylePanel(state, action) {
       state.openedStylePanelKey = "";
+      state.openedStylePanelCanCancelStyle = false;
       return state;
     },
 

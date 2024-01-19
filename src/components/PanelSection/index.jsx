@@ -104,9 +104,12 @@ const PanelBody = function () {
   const dispatch = useDispatch();
 
   const handleGridItemClicked =
-    ({ nodeKey }) =>
+    ({ nodeKey }, selected ) =>
     () => {
-      dispatch(openStylePanel(nodeKey));
+      dispatch(openStylePanel({
+        openedStylePanelKey: nodeKey,
+        openedStylePanelCanCancelStyle: selected,
+      }));
     };
 
   return (
@@ -117,7 +120,7 @@ const PanelBody = function () {
             <div
               className="panel-item col-3 gy-2 col-sm-6 gy-sm-3 col-md-4 gy-md-4 col-xl-3 gy-xl-4"
               key={x.nodeKey}
-              onClick={handleGridItemClicked(x)}
+              onClick={handleGridItemClicked(x, !!currnetStyleKeysDict[x.nodeKey])}
             >
               <div
                 className={classNames({

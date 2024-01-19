@@ -13,6 +13,7 @@ import {
   applyStyleFormAccessoriesKeys,
   clearStyleFormAccessoriesKeys,
   applyAccessoriesKeys,
+  removeAccessoriesKeysByTraitNodeKey,
 } from "../../reducers/avatarModelReducer";
 
 const StylePanelHeader = function () {
@@ -20,6 +21,9 @@ const StylePanelHeader = function () {
   const styleFormNode = useSelector((state) => state.panelModel.styleFormNode);
   const styleFormAccessoriesKeys = useSelector(
     (state) => state.avatarModel.styleFormAccessoriesKeys,
+  );
+  const openedStylePanelCanCancelStyle = useSelector(
+    (state) => state.panelModel.openedStylePanelCanCancelStyle,
   );
 
   if (!styleFormNode) {
@@ -35,6 +39,17 @@ const StylePanelHeader = function () {
     dispatch(closeStylePanel());
   };
 
+  const handleCancelButtonClicked = () => {
+    const traitNodeKey = _.chain(styleFormAccessoriesKeys)
+      .keys()
+      .first()
+      .value();
+    if (traitNodeKey) {
+      dispatch(removeAccessoriesKeysByTraitNodeKey({ traitNodeKey }));
+    }
+    dispatch(closeStylePanel());
+  };
+
   return (
     <div className="style-panel-section-header">
       <div className="style-actions">
@@ -42,6 +57,11 @@ const StylePanelHeader = function () {
           <i className="bi bi-arrow-left"></i>
         </button>
 
+        {openedStylePanelCanCancelStyle && (
+          <button onClick={handleCancelButtonClicked} className="btn">
+            <i className="bi bi-x"></i>
+          </button>
+        )}
         <button onClick={handleApplyButtonClicked} className="btn">
           <i className="bi bi-check2"></i>
         </button>
@@ -77,19 +97,29 @@ const CombineStyleForm = function ({ ctxNode, parentNodeLabels }) {
   const currentNodeLabels = [...parentNodeLabels, ctxNode.nodeLabel];
 
   const renderCombineSection = (node) => {
-
     if (node.type == "accessory") {
-      return <CombineAccessoryStyleForm key={node.nodeKey} ctxNode={node} parentNodeLabels={currentNodeLabels} />
+      return (
+        <CombineAccessoryStyleForm
+          key={node.nodeKey}
+          ctxNode={node}
+          parentNodeLabels={currentNodeLabels}
+        />
+      );
     }
 
-    return <StyleForm key={node.nodeKey} ctxNode={node} parentNodeLabels={currentNodeLabels} />
-  }
+    return (
+      <StyleForm
+        key={node.nodeKey}
+        ctxNode={node}
+        parentNodeLabels={currentNodeLabels}
+      />
+    );
+  };
 
   return (
     <div className="cmobile-container">{nodes.map(renderCombineSection)}</div>
   );
 };
-
 
 const CombineAccessoryStyleForm = function ({ ctxNode, parentNodeLabels }) {
   const currentNodeLabels = [...parentNodeLabels, ctxNode.nodeLabel];
@@ -119,17 +149,16 @@ const CombineAccessoryStyleForm = function ({ ctxNode, parentNodeLabels }) {
     </div>
   );
 
-  return (<div className="radio-container">
+  return (
+    <div className="radio-container">
       <div className="radio-title">
         <div className="radio-title-badge">
           {[...currentNodeLabels].join("/")}：
         </div>
       </div>
-      <div className="row">
-        {[ctxNode].map(renderRadio)}
-      </div>
+      <div className="row">{[ctxNode].map(renderRadio)}</div>
     </div>
- )
+  );
 };
 
 const RadioStyleForm = function ({ ctxNode, parentNodeLabels }) {
@@ -189,9 +218,7 @@ const RadioStyleForm = function ({ ctxNode, parentNodeLabels }) {
           {[...currentNodeLabels].join("/")}：
         </div>
       </div>
-      <div className="row">
-        {nodes.map(renderRadio)}
-      </div>
+      <div className="row">{nodes.map(renderRadio)}</div>
 
       {renderSelectedNodeForm()}
     </div>
@@ -302,7 +329,9 @@ export default () => {
   const currentAccessoriesKeys = useSelector(
     (state) => state.avatarModel.currentAccessoriesKeys,
   );
-  const defaultAccessoriesKeysDict = _.keyBy(currentAccessoriesKeys[currentTraitNodeKey] || [])
+  const defaultAccessoriesKeysDict = _.keyBy(
+    currentAccessoriesKeys[currentTraitNodeKey] || [],
+  );
 
   const dispatch = useDispatch();
   const styleFormNode = useSelector((state) => state.panelModel.styleFormNode);
