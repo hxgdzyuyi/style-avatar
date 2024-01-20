@@ -30,8 +30,8 @@ const currentSlice = createSlice({
     removeAccessoriesKeysByTraitNodeKey: (state, action) => {
       const { traitNodeKey } = action.payload;
 
+      state.undoList.push(current(state.currentAccessoriesKeys));
       delete state.currentAccessoriesKeys[traitNodeKey];
-      state.undoList.push(state.currentAccessoriesKeys);
       return state;
     },
 
@@ -56,7 +56,7 @@ const currentSlice = createSlice({
       }
 
       state.redoList = [];
-      state.undoList.push(state.currentAccessoriesKeys);
+      state.undoList.push(current(state.currentAccessoriesKeys));
       state.currentAccessoriesKeys = {
         ...state.currentAccessoriesKeys,
         ...payload,
@@ -66,7 +66,7 @@ const currentSlice = createSlice({
 
     undoApplyAccessoriesKeys: (state, action) => {
       if (state.undoList.length) {
-        state.redoList.push(state.currentAccessoriesKeys);
+        state.redoList.push(current(state.currentAccessoriesKeys));
         state.currentAccessoriesKeys = state.undoList.pop();
       }
       return state;
@@ -74,7 +74,7 @@ const currentSlice = createSlice({
 
     redoApplyAccessoriesKeys: (state, action) => {
       if (state.redoList.length) {
-        state.undoList.push(state.currentAccessoriesKeys);
+        state.undoList.push(current(state.currentAccessoriesKeys));
         state.currentAccessoriesKeys = state.redoList.pop();
       }
       return state;
