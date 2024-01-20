@@ -1,4 +1,4 @@
-import { createSlice, current } from "@reduxjs/toolkit";
+import { createSlice, current, original } from "@reduxjs/toolkit";
 import _ from "lodash";
 
 const initialState = {
@@ -47,6 +47,14 @@ const currentSlice = createSlice({
 
     applyAccessoriesKeys: (state, action) => {
       const { payload } = action;
+
+      const payloadKeys = _.keys(payload);
+      const currentWillApplyed = _.pick(state.currentAccessoriesKeys, payloadKeys);
+
+      if (_.isEqual(payload, currentWillApplyed)) {
+        return state;
+      }
+
       state.redoList = [];
       state.undoList.push(state.currentAccessoriesKeys);
       state.currentAccessoriesKeys = {
