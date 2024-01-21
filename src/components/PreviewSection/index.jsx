@@ -149,7 +149,7 @@ function PreviewRightActions() {
     const accessoryKeys = _.reduce(
       sampleTraitKeys,
       (acc, traitKey) => {
-        acc[traitKey] = _.sample(allAccessoriesByTraitKey[traitKey]).key;
+        acc[traitKey] = [_.sample(allAccessoriesByTraitKey[traitKey]).key];
         return acc;
       },
       {},
