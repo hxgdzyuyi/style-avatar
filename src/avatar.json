@@ -19849,10 +19849,21 @@
             "previewFileKey": "/eyes/eyes13.webp"
           },
           "eyes14": {
-            "type": "accessory",
+            "type": "node",
             "nodeKey": "eyes14",
             "nodeLabel": "眼睛14",
             "listOrder": 14,
+            "selectType": "radio",
+            "nodes": {
+              "eyes14": {
+                "type": "accessory",
+                "nodeKey": "eyes14",
+                "nodeLabel": "眼睛14",
+                "listOrder": 1,
+                "key": "eyes_eyes14",
+                "previewFileKey": "/eyes/eyes14/eyes14.webp"
+              }
+            },
             "key": "eyes_eyes14",
             "previewFileKey": "/eyes/eyes14.webp"
           },
@@ -20033,10 +20044,21 @@
             "previewFileKey": "/eyes/eyes2.webp"
           },
           "eyes3": {
-            "type": "accessory",
+            "type": "node",
             "nodeKey": "eyes3",
             "nodeLabel": "眼睛3",
             "listOrder": 3,
+            "selectType": "radio",
+            "nodes": {
+              "eyes3": {
+                "type": "accessory",
+                "nodeKey": "eyes3",
+                "nodeLabel": "眼睛3",
+                "listOrder": 1,
+                "key": "eyes_eyes3",
+                "previewFileKey": "/eyes/eyes3/eyes3.webp"
+              }
+            },
             "key": "eyes_eyes3",
             "previewFileKey": "/eyes/eyes3.webp"
           },
@@ -20371,10 +20393,21 @@
             "previewFileKey": "/eyes/eyes6.webp"
           },
           "eyes7": {
-            "type": "accessory",
+            "type": "node",
             "nodeKey": "eyes7",
             "nodeLabel": "眼睛7",
             "listOrder": 7,
+            "selectType": "radio",
+            "nodes": {
+              "eyes7": {
+                "type": "accessory",
+                "nodeKey": "eyes7",
+                "nodeLabel": "眼睛7",
+                "listOrder": 1,
+                "key": "eyes_eyes7",
+                "previewFileKey": "/eyes/eyes7/eyes7.webp"
+              }
+            },
             "key": "eyes_eyes7",
             "previewFileKey": "/eyes/eyes7.webp"
           },
@@ -20445,10 +20478,21 @@
             "previewFileKey": "/eyes/eyes8.webp"
           },
           "eyes9": {
-            "type": "accessory",
+            "type": "node",
             "nodeKey": "eyes9",
             "nodeLabel": "眼睛9",
             "listOrder": 9,
+            "selectType": "radio",
+            "nodes": {
+              "eyes9": {
+                "type": "accessory",
+                "nodeKey": "eyes9",
+                "nodeLabel": "眼睛9",
+                "listOrder": 1,
+                "key": "eyes_eyes9",
+                "previewFileKey": "/eyes/eyes9/eyes9.webp"
+              }
+            },
             "key": "eyes_eyes9",
             "previewFileKey": "/eyes/eyes9.webp"
           }
@@ -22235,10 +22279,21 @@
         "listOrder": 6,
         "nodes": {
           "ornament10": {
-            "type": "accessory",
+            "type": "node",
             "nodeKey": "ornament10",
             "nodeLabel": "面饰10",
             "listOrder": 10,
+            "selectType": "radio",
+            "nodes": {
+              "ornament10": {
+                "type": "accessory",
+                "nodeKey": "ornament10",
+                "nodeLabel": "面饰10",
+                "listOrder": 1,
+                "key": "ornament_ornament10",
+                "previewFileKey": "/ornament/ornament10/ornament10.webp"
+              }
+            },
             "key": "ornament_ornament10",
             "previewFileKey": "/ornament/ornament10.webp"
           },
@@ -22681,34 +22736,78 @@
             "previewFileKey": "/ornament/ornament5.webp"
           },
           "ornament6": {
-            "type": "accessory",
+            "type": "node",
             "nodeKey": "ornament6",
             "nodeLabel": "面饰6",
             "listOrder": 6,
+            "selectType": "radio",
+            "nodes": {
+              "ornament6": {
+                "type": "accessory",
+                "nodeKey": "ornament6",
+                "nodeLabel": "面饰6",
+                "listOrder": 1,
+                "key": "ornament_ornament6",
+                "previewFileKey": "/ornament/ornament6/ornament6.webp"
+              }
+            },
             "key": "ornament_ornament6",
             "previewFileKey": "/ornament/ornament6.webp"
           },
           "ornament7": {
-            "type": "accessory",
+            "type": "node",
             "nodeKey": "ornament7",
             "nodeLabel": "面饰7",
             "listOrder": 7,
+            "selectType": "radio",
+            "nodes": {
+              "ornament7": {
+                "type": "accessory",
+                "nodeKey": "ornament7",
+                "nodeLabel": "面饰7",
+                "listOrder": 1,
+                "key": "ornament_ornament7",
+                "previewFileKey": "/ornament/ornament7/ornament7.webp"
+              }
+            },
             "key": "ornament_ornament7",
             "previewFileKey": "/ornament/ornament7.webp"
           },
           "ornament8": {
-            "type": "accessory",
+            "type": "node",
             "nodeKey": "ornament8",
             "nodeLabel": "面饰8",
             "listOrder": 8,
+            "selectType": "radio",
+            "nodes": {
+              "ornament8": {
+                "type": "accessory",
+                "nodeKey": "ornament8",
+                "nodeLabel": "面饰8",
+                "listOrder": 1,
+                "key": "ornament_ornament8",
+                "previewFileKey": "/ornament/ornament8/ornament8.webp"
+              }
+            },
             "key": "ornament_ornament8",
             "previewFileKey": "/ornament/ornament8.webp"
           },
           "ornament9": {
-            "type": "accessory",
+            "type": "node",
             "nodeKey": "ornament9",
             "nodeLabel": "面饰9",
             "listOrder": 9,
+            "selectType": "radio",
+            "nodes": {
+              "ornament9": {
+                "type": "accessory",
+                "nodeKey": "ornament9",
+                "nodeLabel": "面饰9",
+                "listOrder": 1,
+                "key": "ornament_ornament9",
+                "previewFileKey": "/ornament/ornament9/ornament9.webp"
+              }
+            },
             "key": "ornament_ornament9",
             "previewFileKey": "/ornament/ornament9.webp"
           }
