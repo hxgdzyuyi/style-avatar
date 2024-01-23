@@ -2420,7 +2420,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing1_part1_blue.webp"
     },
     {
@@ -2453,7 +2453,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing1_part1_gray.webp"
     },
     {
@@ -2486,7 +2486,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing1_part1_jade.webp"
     },
     {
@@ -2519,7 +2519,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing1_part1_pink.webp"
     },
     {
@@ -2552,7 +2552,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing1_part1_purple.webp"
     },
     {
@@ -2585,7 +2585,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing1_part1_yellow.webp"
     },
     {
@@ -2618,7 +2618,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing1_part2_blue.webp"
     },
     {
@@ -2651,7 +2651,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing1_part2_jade.webp"
     },
     {
@@ -2684,7 +2684,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing1_part2_pink.webp"
     },
     {
@@ -2717,7 +2717,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing1_part2_purple.webp"
     },
     {
@@ -2750,7 +2750,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing1_part2_white.webp"
     },
     {
@@ -2783,7 +2783,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing1_part2_yellow.webp"
     },
     {
@@ -2816,7 +2816,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing1_part3_blue.webp"
     },
     {
@@ -2849,7 +2849,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing1_part3_brown.webp"
     },
     {
@@ -2882,7 +2882,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing1_part3_green.webp"
     },
     {
@@ -2915,7 +2915,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing1_part3_pink.webp"
     },
     {
@@ -2948,7 +2948,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服1",
       "styleKey": "clothing1",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing1_part3_purple.webp"
     },
     {
@@ -3146,7 +3146,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服2",
       "styleKey": "clothing2",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing2_part1_black.webp"
     },
     {
@@ -3179,7 +3179,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服2",
       "styleKey": "clothing2",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing2_part1_blue.webp"
     },
     {
@@ -3212,7 +3212,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服2",
       "styleKey": "clothing2",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing2_part1_gray.webp"
     },
     {
@@ -3245,7 +3245,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服2",
       "styleKey": "clothing2",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing2_part2_black.webp"
     },
     {
@@ -3278,7 +3278,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服2",
       "styleKey": "clothing2",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing2_part2_blue.webp"
     },
     {
@@ -3311,7 +3311,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服2",
       "styleKey": "clothing2",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing2_part2_pink.webp"
     },
     {
@@ -3339,7 +3339,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服3",
       "styleKey": "clothing3",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing3_part1.webp"
     },
     {
@@ -3372,7 +3372,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服3",
       "styleKey": "clothing3",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing3_part2_blue.webp"
     },
     {
@@ -3405,7 +3405,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服3",
       "styleKey": "clothing3",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing3_part2_jade.webp"
     },
     {
@@ -3438,7 +3438,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服3",
       "styleKey": "clothing3",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing3_part2_purple.webp"
     },
     {
@@ -3471,7 +3471,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服3",
       "styleKey": "clothing3",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing3_part2_red.webp"
     },
     {
@@ -3504,7 +3504,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服3",
       "styleKey": "clothing3",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing3_part2_silver.webp"
     },
     {
@@ -3537,7 +3537,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing4_part1_black.webp"
     },
     {
@@ -3570,7 +3570,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing4_part1_blue.webp"
     },
     {
@@ -3603,7 +3603,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing4_part1_jade.webp"
     },
     {
@@ -3636,7 +3636,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing4_part1_pink.webp"
     },
     {
@@ -3669,7 +3669,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing4_part1_purple.webp"
     },
     {
@@ -3702,7 +3702,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing4_part1_silver.webp"
     },
     {
@@ -3735,7 +3735,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing4_part1_yellow.webp"
     },
     {
@@ -3768,7 +3768,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing4_part2_black.webp"
     },
     {
@@ -3801,7 +3801,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing4_part2_blue.webp"
     },
     {
@@ -3834,7 +3834,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing4_part2_jade.webp"
     },
     {
@@ -3867,7 +3867,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing4_part2_pink.webp"
     },
     {
@@ -3900,7 +3900,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing4_part2_purple.webp"
     },
     {
@@ -3933,7 +3933,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing4_part2_white.webp"
     },
     {
@@ -3966,7 +3966,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing4_part2_yellow.webp"
     },
     {
@@ -3999,7 +3999,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing4_part3_black.webp"
     },
     {
@@ -4032,7 +4032,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing4_part3_blue.webp"
     },
     {
@@ -4065,7 +4065,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing4_part3_brown.webp"
     },
     {
@@ -4098,7 +4098,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing4_part3_brown.webp"
     },
     {
@@ -4131,7 +4131,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing4_part3_gray.webp"
     },
     {
@@ -4164,7 +4164,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing4_part3_jade.webp"
     },
     {
@@ -4197,7 +4197,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服4",
       "styleKey": "clothing4",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing4_part3_purple.webp"
     },
     {
@@ -4230,7 +4230,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服5",
       "styleKey": "clothing5",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing5_part1_black.webp"
     },
     {
@@ -4263,7 +4263,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服5",
       "styleKey": "clothing5",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing5_part1_blue.webp"
     },
     {
@@ -4296,7 +4296,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服5",
       "styleKey": "clothing5",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing5_part1_jade.webp"
     },
     {
@@ -4329,7 +4329,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服5",
       "styleKey": "clothing5",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing5_part1_orange.webp"
     },
     {
@@ -4362,7 +4362,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服5",
       "styleKey": "clothing5",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing5_part1_pink.webp"
     },
     {
@@ -4395,7 +4395,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服5",
       "styleKey": "clothing5",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing5_part1_purple.webp"
     },
     {
@@ -4428,7 +4428,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服5",
       "styleKey": "clothing5",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing5_part2_blue.webp"
     },
     {
@@ -4461,7 +4461,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服5",
       "styleKey": "clothing5",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing5_part2_gray.webp"
     },
     {
@@ -4494,7 +4494,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服5",
       "styleKey": "clothing5",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing5_part2_jade.webp"
     },
     {
@@ -4527,7 +4527,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服5",
       "styleKey": "clothing5",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing5_part2_pink.webp"
     },
     {
@@ -4560,7 +4560,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服5",
       "styleKey": "clothing5",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing5_part2_purple.webp"
     },
     {
@@ -4593,7 +4593,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服5",
       "styleKey": "clothing5",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing5_part2_yellow.webp"
     },
     {
@@ -4766,7 +4766,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing7_part1_black.webp"
     },
     {
@@ -4799,7 +4799,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing7_part1_blue.webp"
     },
     {
@@ -4832,7 +4832,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing7_part1_jade.webp"
     },
     {
@@ -4865,7 +4865,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing7_part1_pink.webp"
     },
     {
@@ -4898,7 +4898,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing7_part1_purple.webp"
     },
     {
@@ -4931,7 +4931,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing7_part1_white.webp"
     },
     {
@@ -4964,7 +4964,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing7_part1_yellow.webp"
     },
     {
@@ -4997,7 +4997,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing7_part2_black.webp"
     },
     {
@@ -5030,7 +5030,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing7_part2_blue.webp"
     },
     {
@@ -5063,7 +5063,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing7_part2_jade.webp"
     },
     {
@@ -5096,7 +5096,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing7_part2_pink.webp"
     },
     {
@@ -5129,7 +5129,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing7_part2_purple.webp"
     },
     {
@@ -5162,7 +5162,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing7_part2_white.webp"
     },
     {
@@ -5195,7 +5195,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing7_part2_yellow.webp"
     },
     {
@@ -5228,7 +5228,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing7_part3_black.webp"
     },
     {
@@ -5261,7 +5261,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing7_part3_blue.webp"
     },
     {
@@ -5294,7 +5294,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing7_part3_jade.webp"
     },
     {
@@ -5327,7 +5327,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing7_part3_pink.webp"
     },
     {
@@ -5360,7 +5360,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing7_part3_purple.webp"
     },
     {
@@ -5393,7 +5393,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing7_part3_white.webp"
     },
     {
@@ -5426,7 +5426,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服7",
       "styleKey": "clothing7",
-      "zIndex": 50,
+      "zIndex": 51,
       "fileKey": "/accessories/clothing_clothing7_part3_yellow.webp"
     },
     {
@@ -5459,7 +5459,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing8_part1_black.webp"
     },
     {
@@ -5492,7 +5492,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing8_part1_blue.webp"
     },
     {
@@ -5525,7 +5525,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing8_part1_brown.webp"
     },
     {
@@ -5558,7 +5558,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing8_part1_jade.webp"
     },
     {
@@ -5591,7 +5591,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing8_part1_purple.webp"
     },
     {
@@ -5624,7 +5624,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 53,
       "fileKey": "/accessories/clothing_clothing8_part1_red.webp"
     },
     {
@@ -5667,7 +5667,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant1_part1_blue.webp"
     },
     {
@@ -5710,7 +5710,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant1_part1_green.webp"
     },
     {
@@ -5753,7 +5753,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant1_part1_jade.webp"
     },
     {
@@ -5796,7 +5796,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant1_part1_purple.webp"
     },
     {
@@ -5839,7 +5839,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant1_part1_red.webp"
     },
     {
@@ -5877,7 +5877,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant1_part2.webp"
     },
     {
@@ -5915,7 +5915,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant2_jade.webp"
     },
     {
@@ -5953,7 +5953,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant2_purple.webp"
     },
     {
@@ -5991,7 +5991,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant2_yellow.webp"
     },
     {
@@ -6029,7 +6029,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant3_black.webp"
     },
     {
@@ -6067,7 +6067,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant3_jade.webp"
     },
     {
@@ -6105,7 +6105,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant3_pink.webp"
     },
     {
@@ -6143,7 +6143,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant3_purple.webp"
     },
     {
@@ -6181,7 +6181,7 @@
       "traitLabel": "衣服",
       "styleLabel": "衣服8",
       "styleKey": "clothing8",
-      "zIndex": 50,
+      "zIndex": 52,
       "fileKey": "/accessories/clothing_clothing8_part2_pendant3_yellow.webp"
     },
     {
