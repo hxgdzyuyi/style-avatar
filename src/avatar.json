@@ -1803,7 +1803,7 @@
       "fileKey": "/accessories/background_background6_yellow.webp"
     },
     {
-      "key": "body_body1_black",
+      "key": "body_body1_part1_black",
       "path": [
         {
           "key": "body",
@@ -1813,6 +1813,11 @@
         {
           "key": "body1",
           "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part1",
+          "label": "部分1",
           "listOrder": 1
         },
         {
@@ -1821,17 +1826,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体1_黑",
+      "title": "身体_身体1_部分1_黑",
       "label": "黑",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体1",
       "styleKey": "body1",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body1_black.webp"
+      "zIndex": 33,
+      "fileKey": "/accessories/body_body1_part1_black.webp"
     },
     {
-      "key": "body_body1_blue",
+      "key": "body_body1_part1_blue",
       "path": [
         {
           "key": "body",
@@ -1841,6 +1846,11 @@
         {
           "key": "body1",
           "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part1",
+          "label": "部分1",
           "listOrder": 1
         },
         {
@@ -1849,17 +1859,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体1_蓝",
+      "title": "身体_身体1_部分1_蓝",
       "label": "蓝",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体1",
       "styleKey": "body1",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body1_blue.webp"
+      "zIndex": 33,
+      "fileKey": "/accessories/body_body1_part1_blue.webp"
     },
     {
-      "key": "body_body1_brown",
+      "key": "body_body1_part1_brown",
       "path": [
         {
           "key": "body",
@@ -1869,6 +1879,11 @@
         {
           "key": "body1",
           "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part1",
+          "label": "部分1",
           "listOrder": 1
         },
         {
@@ -1877,17 +1892,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体1_棕",
+      "title": "身体_身体1_部分1_棕",
       "label": "棕",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体1",
       "styleKey": "body1",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body1_brown.webp"
+      "zIndex": 33,
+      "fileKey": "/accessories/body_body1_part1_brown.webp"
     },
     {
-      "key": "body_body1_flesh",
+      "key": "body_body1_part1_flesh",
       "path": [
         {
           "key": "body",
@@ -1897,6 +1912,11 @@
         {
           "key": "body1",
           "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part1",
+          "label": "部分1",
           "listOrder": 1
         },
         {
@@ -1905,17 +1925,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体1_肉",
+      "title": "身体_身体1_部分1_肉",
       "label": "肉",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体1",
       "styleKey": "body1",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body1_flesh.webp"
+      "zIndex": 33,
+      "fileKey": "/accessories/body_body1_part1_flesh.webp"
     },
     {
-      "key": "body_body1_jade",
+      "key": "body_body1_part1_jade",
       "path": [
         {
           "key": "body",
@@ -1925,6 +1945,11 @@
         {
           "key": "body1",
           "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part1",
+          "label": "部分1",
           "listOrder": 1
         },
         {
@@ -1933,17 +1958,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体1_碧",
+      "title": "身体_身体1_部分1_碧",
       "label": "碧",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体1",
       "styleKey": "body1",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body1_jade.webp"
+      "zIndex": 33,
+      "fileKey": "/accessories/body_body1_part1_jade.webp"
     },
     {
-      "key": "body_body1_pink",
+      "key": "body_body1_part1_pink",
       "path": [
         {
           "key": "body",
@@ -1953,6 +1978,11 @@
         {
           "key": "body1",
           "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part1",
+          "label": "部分1",
           "listOrder": 1
         },
         {
@@ -1961,17 +1991,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体1_粉",
+      "title": "身体_身体1_部分1_粉",
       "label": "粉",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体1",
       "styleKey": "body1",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body1_pink.webp"
+      "zIndex": 33,
+      "fileKey": "/accessories/body_body1_part1_pink.webp"
     },
     {
-      "key": "body_body1_purple",
+      "key": "body_body1_part1_purple",
       "path": [
         {
           "key": "body",
@@ -1981,6 +2011,11 @@
         {
           "key": "body1",
           "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part1",
+          "label": "部分1",
           "listOrder": 1
         },
         {
@@ -1989,17 +2024,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体1_紫",
+      "title": "身体_身体1_部分1_紫",
       "label": "紫",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体1",
       "styleKey": "body1",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body1_purple.webp"
+      "zIndex": 33,
+      "fileKey": "/accessories/body_body1_part1_purple.webp"
     },
     {
-      "key": "body_body1_white",
+      "key": "body_body1_part1_white",
       "path": [
         {
           "key": "body",
@@ -2009,6 +2044,11 @@
         {
           "key": "body1",
           "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part1",
+          "label": "部分1",
           "listOrder": 1
         },
         {
@@ -2017,17 +2057,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体1_白",
+      "title": "身体_身体1_部分1_白",
       "label": "白",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体1",
       "styleKey": "body1",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body1_white.webp"
+      "zIndex": 33,
+      "fileKey": "/accessories/body_body1_part1_white.webp"
     },
     {
-      "key": "body_body1_yellow",
+      "key": "body_body1_part1_yellow",
       "path": [
         {
           "key": "body",
@@ -2040,22 +2080,27 @@
           "listOrder": 1
         },
         {
+          "key": "part1",
+          "label": "部分1",
+          "listOrder": 1
+        },
+        {
           "key": "yellow",
           "label": "黄",
           "listOrder": 1
         }
       ],
-      "title": "身体_身体1_黄",
+      "title": "身体_身体1_部分1_黄",
       "label": "黄",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体1",
       "styleKey": "body1",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body1_yellow.webp"
+      "zIndex": 33,
+      "fileKey": "/accessories/body_body1_part1_yellow.webp"
     },
     {
-      "key": "body_body2_black",
+      "key": "body_body1_part2_black",
       "path": [
         {
           "key": "body",
@@ -2063,8 +2108,13 @@
           "listOrder": 3
         },
         {
-          "key": "body2",
-          "label": "身体2",
+          "key": "body1",
+          "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part2",
+          "label": "部分2",
           "listOrder": 2
         },
         {
@@ -2073,17 +2123,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体2_黑",
+      "title": "身体_身体1_部分2_黑",
       "label": "黑",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体2",
-      "styleKey": "body2",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body2_black.webp"
+      "styleKey": "body1",
+      "zIndex": 32,
+      "fileKey": "/accessories/body_body1_part2_black.webp"
     },
     {
-      "key": "body_body2_blue",
+      "key": "body_body1_part2_blue",
       "path": [
         {
           "key": "body",
@@ -2091,8 +2141,13 @@
           "listOrder": 3
         },
         {
-          "key": "body2",
-          "label": "身体2",
+          "key": "body1",
+          "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part2",
+          "label": "部分2",
           "listOrder": 2
         },
         {
@@ -2101,17 +2156,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体2_蓝",
+      "title": "身体_身体1_部分2_蓝",
       "label": "蓝",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体2",
-      "styleKey": "body2",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body2_blue.webp"
+      "styleKey": "body1",
+      "zIndex": 32,
+      "fileKey": "/accessories/body_body1_part2_blue.webp"
     },
     {
-      "key": "body_body2_brown",
+      "key": "body_body1_part2_brown",
       "path": [
         {
           "key": "body",
@@ -2119,8 +2174,13 @@
           "listOrder": 3
         },
         {
-          "key": "body2",
-          "label": "身体2",
+          "key": "body1",
+          "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part2",
+          "label": "部分2",
           "listOrder": 2
         },
         {
@@ -2129,17 +2189,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体2_棕",
+      "title": "身体_身体1_部分2_棕",
       "label": "棕",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体2",
-      "styleKey": "body2",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body2_brown.webp"
+      "styleKey": "body1",
+      "zIndex": 32,
+      "fileKey": "/accessories/body_body1_part2_brown.webp"
     },
     {
-      "key": "body_body2_flesh",
+      "key": "body_body1_part2_flesh",
       "path": [
         {
           "key": "body",
@@ -2147,8 +2207,13 @@
           "listOrder": 3
         },
         {
-          "key": "body2",
-          "label": "身体2",
+          "key": "body1",
+          "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part2",
+          "label": "部分2",
           "listOrder": 2
         },
         {
@@ -2157,17 +2222,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体2_肉",
+      "title": "身体_身体1_部分2_肉",
       "label": "肉",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体2",
-      "styleKey": "body2",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body2_flesh.webp"
+      "styleKey": "body1",
+      "zIndex": 32,
+      "fileKey": "/accessories/body_body1_part2_flesh.webp"
     },
     {
-      "key": "body_body2_jade",
+      "key": "body_body1_part2_jade",
       "path": [
         {
           "key": "body",
@@ -2175,8 +2240,13 @@
           "listOrder": 3
         },
         {
-          "key": "body2",
-          "label": "身体2",
+          "key": "body1",
+          "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part2",
+          "label": "部分2",
           "listOrder": 2
         },
         {
@@ -2185,17 +2255,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体2_碧",
+      "title": "身体_身体1_部分2_碧",
       "label": "碧",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体2",
-      "styleKey": "body2",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body2_jade.webp"
+      "styleKey": "body1",
+      "zIndex": 32,
+      "fileKey": "/accessories/body_body1_part2_jade.webp"
     },
     {
-      "key": "body_body2_pink",
+      "key": "body_body1_part2_pink",
       "path": [
         {
           "key": "body",
@@ -2203,8 +2273,13 @@
           "listOrder": 3
         },
         {
-          "key": "body2",
-          "label": "身体2",
+          "key": "body1",
+          "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part2",
+          "label": "部分2",
           "listOrder": 2
         },
         {
@@ -2213,17 +2288,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体2_粉",
+      "title": "身体_身体1_部分2_粉",
       "label": "粉",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体2",
-      "styleKey": "body2",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body2_pink.webp"
+      "styleKey": "body1",
+      "zIndex": 32,
+      "fileKey": "/accessories/body_body1_part2_pink.webp"
     },
     {
-      "key": "body_body2_purple",
+      "key": "body_body1_part2_purple",
       "path": [
         {
           "key": "body",
@@ -2231,8 +2306,13 @@
           "listOrder": 3
         },
         {
-          "key": "body2",
-          "label": "身体2",
+          "key": "body1",
+          "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part2",
+          "label": "部分2",
           "listOrder": 2
         },
         {
@@ -2241,17 +2321,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体2_紫",
+      "title": "身体_身体1_部分2_紫",
       "label": "紫",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体2",
-      "styleKey": "body2",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body2_purple.webp"
+      "styleKey": "body1",
+      "zIndex": 32,
+      "fileKey": "/accessories/body_body1_part2_purple.webp"
     },
     {
-      "key": "body_body2_white",
+      "key": "body_body1_part2_white",
       "path": [
         {
           "key": "body",
@@ -2259,8 +2339,13 @@
           "listOrder": 3
         },
         {
-          "key": "body2",
-          "label": "身体2",
+          "key": "body1",
+          "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part2",
+          "label": "部分2",
           "listOrder": 2
         },
         {
@@ -2269,17 +2354,17 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体2_白",
+      "title": "身体_身体1_部分2_白",
       "label": "白",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体2",
-      "styleKey": "body2",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body2_white.webp"
+      "styleKey": "body1",
+      "zIndex": 32,
+      "fileKey": "/accessories/body_body1_part2_white.webp"
     },
     {
-      "key": "body_body2_yellow",
+      "key": "body_body1_part2_yellow",
       "path": [
         {
           "key": "body",
@@ -2287,8 +2372,13 @@
           "listOrder": 3
         },
         {
-          "key": "body2",
-          "label": "身体2",
+          "key": "body1",
+          "label": "身体1",
+          "listOrder": 1
+        },
+        {
+          "key": "part2",
+          "label": "部分2",
           "listOrder": 2
         },
         {
@@ -2297,14 +2387,14 @@
           "listOrder": 1
         }
       ],
-      "title": "身体_身体2_黄",
+      "title": "身体_身体1_部分2_黄",
       "label": "黄",
       "traitKey": "body",
       "traitLabel": "身体",
       "styleLabel": "身体2",
-      "styleKey": "body2",
-      "zIndex": 30,
-      "fileKey": "/accessories/body_body2_yellow.webp"
+      "styleKey": "body1",
+      "zIndex": 32,
+      "fileKey": "/accessories/body_body1_part2_yellow.webp"
     },
     {
       "key": "clothing_clothing10_black",
@@ -17892,163 +17982,173 @@
             "nodeLabel": "身体1",
             "listOrder": 1,
             "nodes": {
-              "black": {
-                "type": "accessory",
-                "nodeKey": "black",
-                "nodeLabel": "黑",
+              "part1": {
+                "type": "node",
+                "nodeKey": "part1",
+                "nodeLabel": "部分1",
                 "listOrder": 1,
-                "key": "body_body1_black",
-                "previewFileKey": "/body/body1/black.webp"
+                "nodes": {
+                  "black": {
+                    "type": "accessory",
+                    "nodeKey": "black",
+                    "nodeLabel": "黑",
+                    "listOrder": 1,
+                    "key": "body_body1_part1_black",
+                    "previewFileKey": "/body/body1/part1/black.webp"
+                  },
+                  "blue": {
+                    "type": "accessory",
+                    "nodeKey": "blue",
+                    "nodeLabel": "蓝",
+                    "listOrder": 1,
+                    "key": "body_body1_part1_blue",
+                    "previewFileKey": "/body/body1/part1/blue.webp"
+                  },
+                  "brown": {
+                    "type": "accessory",
+                    "nodeKey": "brown",
+                    "nodeLabel": "棕",
+                    "listOrder": 1,
+                    "key": "body_body1_part1_brown",
+                    "previewFileKey": "/body/body1/part1/brown.webp"
+                  },
+                  "flesh": {
+                    "type": "accessory",
+                    "nodeKey": "flesh",
+                    "nodeLabel": "肉",
+                    "listOrder": 1,
+                    "key": "body_body1_part1_flesh",
+                    "previewFileKey": "/body/body1/part1/flesh.webp"
+                  },
+                  "jade": {
+                    "type": "accessory",
+                    "nodeKey": "jade",
+                    "nodeLabel": "碧",
+                    "listOrder": 1,
+                    "key": "body_body1_part1_jade",
+                    "previewFileKey": "/body/body1/part1/jade.webp"
+                  },
+                  "pink": {
+                    "type": "accessory",
+                    "nodeKey": "pink",
+                    "nodeLabel": "粉",
+                    "listOrder": 1,
+                    "key": "body_body1_part1_pink",
+                    "previewFileKey": "/body/body1/part1/pink.webp"
+                  },
+                  "purple": {
+                    "type": "accessory",
+                    "nodeKey": "purple",
+                    "nodeLabel": "紫",
+                    "listOrder": 1,
+                    "key": "body_body1_part1_purple",
+                    "previewFileKey": "/body/body1/part1/purple.webp"
+                  },
+                  "white": {
+                    "type": "accessory",
+                    "nodeKey": "white",
+                    "nodeLabel": "白",
+                    "listOrder": 1,
+                    "key": "body_body1_part1_white",
+                    "previewFileKey": "/body/body1/part1/white.webp"
+                  },
+                  "yellow": {
+                    "type": "accessory",
+                    "nodeKey": "yellow",
+                    "nodeLabel": "黄",
+                    "listOrder": 1,
+                    "key": "body_body1_part1_yellow",
+                    "previewFileKey": "/body/body1/part1/yellow.webp"
+                  }
+                },
+                "selectType": "radio",
+                "previewFileKey": "/body/body1/part1.webp"
               },
-              "blue": {
-                "type": "accessory",
-                "nodeKey": "blue",
-                "nodeLabel": "蓝",
-                "listOrder": 1,
-                "key": "body_body1_blue",
-                "previewFileKey": "/body/body1/blue.webp"
-              },
-              "brown": {
-                "type": "accessory",
-                "nodeKey": "brown",
-                "nodeLabel": "棕",
-                "listOrder": 1,
-                "key": "body_body1_brown",
-                "previewFileKey": "/body/body1/brown.webp"
-              },
-              "flesh": {
-                "type": "accessory",
-                "nodeKey": "flesh",
-                "nodeLabel": "肉",
-                "listOrder": 1,
-                "key": "body_body1_flesh",
-                "previewFileKey": "/body/body1/flesh.webp"
-              },
-              "jade": {
-                "type": "accessory",
-                "nodeKey": "jade",
-                "nodeLabel": "碧",
-                "listOrder": 1,
-                "key": "body_body1_jade",
-                "previewFileKey": "/body/body1/jade.webp"
-              },
-              "pink": {
-                "type": "accessory",
-                "nodeKey": "pink",
-                "nodeLabel": "粉",
-                "listOrder": 1,
-                "key": "body_body1_pink",
-                "previewFileKey": "/body/body1/pink.webp"
-              },
-              "purple": {
-                "type": "accessory",
-                "nodeKey": "purple",
-                "nodeLabel": "紫",
-                "listOrder": 1,
-                "key": "body_body1_purple",
-                "previewFileKey": "/body/body1/purple.webp"
-              },
-              "white": {
-                "type": "accessory",
-                "nodeKey": "white",
-                "nodeLabel": "白",
-                "listOrder": 1,
-                "key": "body_body1_white",
-                "previewFileKey": "/body/body1/white.webp"
-              },
-              "yellow": {
-                "type": "accessory",
-                "nodeKey": "yellow",
-                "nodeLabel": "黄",
-                "listOrder": 1,
-                "key": "body_body1_yellow",
-                "previewFileKey": "/body/body1/yellow.webp"
+              "part2": {
+                "type": "node",
+                "nodeKey": "part2",
+                "nodeLabel": "部分2",
+                "listOrder": 2,
+                "nodes": {
+                  "black": {
+                    "type": "accessory",
+                    "nodeKey": "black",
+                    "nodeLabel": "黑",
+                    "listOrder": 1,
+                    "key": "body_body1_part2_black",
+                    "previewFileKey": "/body/body1/part2/black.webp"
+                  },
+                  "blue": {
+                    "type": "accessory",
+                    "nodeKey": "blue",
+                    "nodeLabel": "蓝",
+                    "listOrder": 1,
+                    "key": "body_body1_part2_blue",
+                    "previewFileKey": "/body/body1/part2/blue.webp"
+                  },
+                  "brown": {
+                    "type": "accessory",
+                    "nodeKey": "brown",
+                    "nodeLabel": "棕",
+                    "listOrder": 1,
+                    "key": "body_body1_part2_brown",
+                    "previewFileKey": "/body/body1/part2/brown.webp"
+                  },
+                  "flesh": {
+                    "type": "accessory",
+                    "nodeKey": "flesh",
+                    "nodeLabel": "肉",
+                    "listOrder": 1,
+                    "key": "body_body1_part2_flesh",
+                    "previewFileKey": "/body/body1/part2/flesh.webp"
+                  },
+                  "jade": {
+                    "type": "accessory",
+                    "nodeKey": "jade",
+                    "nodeLabel": "碧",
+                    "listOrder": 1,
+                    "key": "body_body1_part2_jade",
+                    "previewFileKey": "/body/body1/part2/jade.webp"
+                  },
+                  "pink": {
+                    "type": "accessory",
+                    "nodeKey": "pink",
+                    "nodeLabel": "粉",
+                    "listOrder": 1,
+                    "key": "body_body1_part2_pink",
+                    "previewFileKey": "/body/body1/part2/pink.webp"
+                  },
+                  "purple": {
+                    "type": "accessory",
+                    "nodeKey": "purple",
+                    "nodeLabel": "紫",
+                    "listOrder": 1,
+                    "key": "body_body1_part2_purple",
+                    "previewFileKey": "/body/body1/part2/purple.webp"
+                  },
+                  "white": {
+                    "type": "accessory",
+                    "nodeKey": "white",
+                    "nodeLabel": "白",
+                    "listOrder": 1,
+                    "key": "body_body1_part2_white",
+                    "previewFileKey": "/body/body1/part2/white.webp"
+                  },
+                  "yellow": {
+                    "type": "accessory",
+                    "nodeKey": "yellow",
+                    "nodeLabel": "黄",
+                    "listOrder": 1,
+                    "key": "body_body1_part2_yellow",
+                    "previewFileKey": "/body/body1/part2/yellow.webp"
+                  }
+                },
+                "selectType": "radio",
+                "previewFileKey": "/body/body1/part2.webp"
               }
             },
-            "selectType": "radio",
+            "selectType": "combine",
             "previewFileKey": "/body/body1.webp"
-          },
-          "body2": {
-            "type": "node",
-            "nodeKey": "body2",
-            "nodeLabel": "身体2",
-            "listOrder": 2,
-            "nodes": {
-              "black": {
-                "type": "accessory",
-                "nodeKey": "black",
-                "nodeLabel": "黑",
-                "listOrder": 1,
-                "key": "body_body2_black",
-                "previewFileKey": "/body/body2/black.webp"
-              },
-              "blue": {
-                "type": "accessory",
-                "nodeKey": "blue",
-                "nodeLabel": "蓝",
-                "listOrder": 1,
-                "key": "body_body2_blue",
-                "previewFileKey": "/body/body2/blue.webp"
-              },
-              "brown": {
-                "type": "accessory",
-                "nodeKey": "brown",
-                "nodeLabel": "棕",
-                "listOrder": 1,
-                "key": "body_body2_brown",
-                "previewFileKey": "/body/body2/brown.webp"
-              },
-              "flesh": {
-                "type": "accessory",
-                "nodeKey": "flesh",
-                "nodeLabel": "肉",
-                "listOrder": 1,
-                "key": "body_body2_flesh",
-                "previewFileKey": "/body/body2/flesh.webp"
-              },
-              "jade": {
-                "type": "accessory",
-                "nodeKey": "jade",
-                "nodeLabel": "碧",
-                "listOrder": 1,
-                "key": "body_body2_jade",
-                "previewFileKey": "/body/body2/jade.webp"
-              },
-              "pink": {
-                "type": "accessory",
-                "nodeKey": "pink",
-                "nodeLabel": "粉",
-                "listOrder": 1,
-                "key": "body_body2_pink",
-                "previewFileKey": "/body/body2/pink.webp"
-              },
-              "purple": {
-                "type": "accessory",
-                "nodeKey": "purple",
-                "nodeLabel": "紫",
-                "listOrder": 1,
-                "key": "body_body2_purple",
-                "previewFileKey": "/body/body2/purple.webp"
-              },
-              "white": {
-                "type": "accessory",
-                "nodeKey": "white",
-                "nodeLabel": "白",
-                "listOrder": 1,
-                "key": "body_body2_white",
-                "previewFileKey": "/body/body2/white.webp"
-              },
-              "yellow": {
-                "type": "accessory",
-                "nodeKey": "yellow",
-                "nodeLabel": "黄",
-                "listOrder": 1,
-                "key": "body_body2_yellow",
-                "previewFileKey": "/body/body2/yellow.webp"
-              }
-            },
-            "selectType": "radio",
-            "previewFileKey": "/body/body2.webp"
           }
         },
         "selectType": "radio",
