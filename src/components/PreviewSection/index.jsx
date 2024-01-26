@@ -26,8 +26,8 @@ function getCurrentDate() {
 
 async function exportAvatarToJPEG(avatarAccessories) {
   var canvas = document.createElement("canvas");
-  canvas.width = 200;
-  canvas.height = 200;
+  canvas.width = 512;
+  canvas.height = 512;
 
   var context = canvas.getContext("2d");
   context.fillStyle = "white";
