@@ -155,6 +155,12 @@ function PreviewRightActions() {
       {},
     );
 
+    if (accessoryKeys.clothing && accessoryKeys.clothing.length > 0 && (!accessoryKeys.body || !accessoryKeys.body.length)) {
+      accessoryKeys.body = ["body_body1_part1_yellow", "body_body1_part2_black"]
+    } else if (accessoryKeys.body && accessoryKeys.body.length > 0 && (!accessoryKeys.clothing || !accessoryKeys.clothing.length)) {
+      accessoryKeys.clothing = ["clothing_clothing8_part1_jade", "clothing_clothing8_part2_pendant2_purple"]
+    }
+
     dispatch(setAccessoriesKeys(accessoryKeys));
   };
 
